@@ -788,6 +788,18 @@ $title = 'contact us';
                                     </div>
                                 </div>
                             </div>
+                            <div data-w-id="75b1100b-7568-57a1-1d2b-9dd6f9b1128b" class="slide w-slide">
+                                <div class="center-slide">
+                                    <div class="slide-item">
+                                        <img src="{{ asset('images/bg-slider.jpg') }}" loading="lazy" width="313"
+                                            sizes="(max-width: 479px) 100vw, 313px" alt="" srcset="
+                              images/bg-slider-p-500.jpg 500w,
+                              images/bg-slider.jpg       626w
+                            " />
+                                        <div class="change-this-image slide-side-5"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="left-arrow w-slider-arrow-left">
                             <div class="w-icon-slider-left"></div>
@@ -1872,7 +1884,7 @@ $title = 'contact us';
                             <div>
                                 <div class="relative-auto">
                                     <a data-w-id="506eced1-f582-4c4d-74fb-802b235bee14"
-                                        href="/post/we-launch-corporatex-template-this-week"
+                                        href="#"
                                         class="preview-link-block w-inline-block"><img src="{{ asset('images/post-bg.jpg') }}"
                                             loading="lazy" width="560" alt="" />
                                         <div style="
@@ -1899,12 +1911,12 @@ $title = 'contact us';
                                             </div>
                                         </div>
                                     </a><a data-w-id="0311d12f-5a81-22f4-14c0-a84b45e20eec" style="opacity: 0"
-                                        href="/category/updates" class="category-link">Updates</a>
+                                        href="#" class="category-link">Updates</a>
                                 </div>
                                 <div class="preview-text-container">
                                     <div class="preview-link-box">
-                                        <a href="/post/we-launch-corporatex-template-this-week"
-                                            class="preview-link">We Launch Corporatex Template this Week!</a>
+                                        <a href="#"
+                                            class="preview-link">Lorem ipsum dolor sit amet consectetur</a>
                                     </div>
                                     <div class="paragraph-box">
                                         <p class="paragraph-medium">
@@ -1914,7 +1926,7 @@ $title = 'contact us';
                                     </div>
                                     <div class="text-link-box">
                                         <a data-w-id="ae086839-6e9b-f652-d0ec-6165306f222b"
-                                            href="/post/we-launch-corporatex-template-this-week"
+                                            href="#"
                                             class="text-link-block w-inline-block">
                                             <div class="right-margin">Learn more</div>
                                             <div class="circle-arrow"></div>
@@ -1927,7 +1939,7 @@ $title = 'contact us';
                             <div>
                                 <div class="relative-auto">
                                     <a data-w-id="506eced1-f582-4c4d-74fb-802b235bee14"
-                                        href="/post/how-to-find-great-consulting-experts"
+                                        href="#"
                                         class="preview-link-block w-inline-block"><img src="{{ asset('images/post-bg.jpg') }}"
                                             loading="lazy" width="560" alt="" />
                                         <div style="
@@ -1954,11 +1966,11 @@ $title = 'contact us';
                                             </div>
                                         </div>
                                     </a><a data-w-id="0311d12f-5a81-22f4-14c0-a84b45e20eec" style="opacity: 0"
-                                        href="/category/strategy" class="category-link">Strategy</a>
+                                        href="#" class="category-link">Strategy</a>
                                 </div>
                                 <div class="preview-text-container">
                                     <div class="preview-link-box">
-                                        <a href="/post/how-to-find-great-consulting-experts"
+                                        <a href="#"
                                             class="preview-link">How To Find Great Consulting Experts</a>
                                     </div>
                                     <div class="paragraph-box">
@@ -1969,7 +1981,7 @@ $title = 'contact us';
                                     </div>
                                     <div class="text-link-box">
                                         <a data-w-id="ae086839-6e9b-f652-d0ec-6165306f222b"
-                                            href="/post/how-to-find-great-consulting-experts"
+                                            href="#"
                                             class="text-link-block w-inline-block">
                                             <div class="right-margin">Learn more</div>
                                             <div class="circle-arrow"></div>
@@ -1994,7 +2006,7 @@ $title = 'contact us';
             </div>
         </div>
         <div class="flex-instagram">
-            <a data-w-id="15965686-ff94-d04e-e354-1579c28c19b7" href="/about-us"
+            <a data-w-id="15965686-ff94-d04e-e354-1579c28c19b7" href="#"
                 target="_blank" class="insta-pic w-inline-block"><img src="{{ asset('images/insta-bg.jpg') }}" srcset="
                   images/insta-bg-p-500.jpg 500w,
                   images/insta-bg.jpg       520w
@@ -2006,7 +2018,7 @@ $title = 'contact us';
                     <img src="{{ asset('images/rakez-logo.png') }}" width="150" data-w-id="15965686-ff94-d04e-e354-1579c28c19bc"
                         alt="" class="hover-icon" />
                 </div>
-            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19bd" href="/about-us"
+            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19bd" href="#"
                 target="_blank" class="insta-pic w-inline-block"><img src="{{ asset('images/insta-bg.jpg') }}" srcset="
                   images/insta-bg-p-500.jpg 500w,
                   images/insta-bg.jpg       520w
@@ -2018,7 +2030,7 @@ $title = 'contact us';
                     <img src="{{ asset('images/meydan-logo.png') }}" width="200" data-w-id="15965686-ff94-d04e-e354-1579c28c19c2"
                         alt="" class="hover-icon" />
                 </div>
-            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19c3" href="/about-us"
+            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19c3" href="#"
                 target="_blank" class="insta-pic w-inline-block"><img src="{{ asset('images/insta-bg.jpg') }}" srcset="
                   images/insta-bg-p-500.jpg 500w,
                   images/insta-bg.jpg       520w
@@ -2030,7 +2042,7 @@ $title = 'contact us';
                     <img src="{{ asset('images/ifza-logo.png') }}" width="150" data-w-id="15965686-ff94-d04e-e354-1579c28c19c8"
                         alt="" class="hover-icon" />
                 </div>
-            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19c9" href="/about-us"
+            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19c9" href="#"
                 target="_blank" class="insta-pic w-inline-block"><img src="{{ asset('images/insta-bg.jpg') }}" srcset="
                   images/insta-bg-p-500.jpg 500w,
                   images/insta-bg.jpg       520w
@@ -2042,7 +2054,7 @@ $title = 'contact us';
                     <img src="{{ asset('images/difc-logo.png') }}" width="150" data-w-id="15965686-ff94-d04e-e354-1579c28c19ce"
                         alt="" class="hover-icon" />
                 </div>
-            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19cf" href="/about-us"
+            </a><a data-w-id="15965686-ff94-d04e-e354-1579c28c19cf" href="#"
                 target="_blank" class="insta-pic w-inline-block"><img src="{{ asset('images/insta-bg.jpg') }}" srcset="
                   images/insta-bg-p-500.jpg 500w,
                   images/insta-bg.jpg       520w

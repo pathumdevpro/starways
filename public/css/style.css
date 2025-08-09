@@ -3587,19 +3587,22 @@ blockquote {
 }
 
 .change-this-image.slide-side {
-    background-image: url("../images/pexels-mikhail-nilov-8871903.jpg");
+    background-image: url("../images/home-mini-slide1.jpg");
 }
 
 .change-this-image.slider-side-2 {
-    background-image: url("../images/pexels-edmond-dante-cc-80s-4342498.jpg");
+    background-image: url("../images/home-mini-slide2.jpg");
 }
 
 .change-this-image.slide-side-3 {
-    background-image: url("../images/pexels-cottonbro-studio-7437499.jpg");
+    background-image: url("../images/home-mini-slide3.jpg");
 }
 
 .change-this-image.slide-side-4 {
-    background-image: url("../images/christina-spoerer-idihfjpf3-g-unsplash.jpg");
+    background-image: url("../images/home-mini-slide4.jpg");
+}
+.change-this-image.slide-side-5 {
+    background-image: url("../images/home-mini-slide5.jpg");
 }
 
 .change-this-image.laptop {
@@ -3829,12 +3832,12 @@ blockquote {
 }
 
 .hero-mini-pic {
-    background-image: url("../images/mini-pic.jpg");
-    background-position: 50% 100%;
+    background-image: url("../images/mini-pic.png");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 17.5px;
-    width: 50px;
+    width: 35px;
     height: 35px;
     margin-right: 10px;
 }

@@ -4,7 +4,6 @@
     <html data-wf-page="642b977704ea370b045dcd31" data-wf-site="63f3c02b670c563640ba280f" lang="en">
 @elseif (Route::currentRouteName() === 'index')
     <html data-wf-page="642b977704ea37fcf05dcce3" data-wf-site="63f3c02b670c563640ba280f" lang="en">
-        <!-- set it allow for all the services* pages -->
 @elseif (Route::is('services.*'))
     <html data-wf-page="642b977704ea37570c5dcd34" data-wf-site="63f3c02b670c563640ba280f" lang="en" data-wf-collection="642b977704ea37e0c45dcce7" data-wf-item-slug="financial-planning">
 @elseif (Route::is('blogs.index'))
@@ -19,7 +18,7 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <meta content="XynoSync (info@xynosync.com)" name="author">
+    <meta content="PhyxleLoom (info@phyxleloom.com)" name="author">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta content="Pathum Bandara (pathumbandarame@gmail.com)" name="author">
     <title>{{ $title }} | {{ env('APP_NAME') }}</title>
