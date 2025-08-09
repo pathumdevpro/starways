@@ -7,7 +7,7 @@
             <div class="row justify-content-center align-items-center h-full">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                     <div class="text-center">
-                        <img src="{{ asset('images/admin/logo.svg') }}" alt="logo" width="150">
+                        <img src="{{ asset('images/starway-logo.svg') }}" alt="logo" width="150">
                     </div>
                     <div class="card p-15">
                         <h1 class="card-title">
@@ -40,7 +40,7 @@
                         </form>
                     </div>
                     <div class="text-center">
-                        <span>Designed and developed by <a href="https://phyxle.com" target="_blank" class="text-light">Phyxle</a>.</span><br>
+                        <span>Designed and developed by <a href="https://phyxleloom.com" target="_blank" class="text-light">Phyxleloom</a>.</span><br>
                         <small>Current version: <span class="version"></span></small>
                     </div>
                 </div>
