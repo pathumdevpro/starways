@@ -1,0 +1,46 @@
+html {
+    font-size: 55%;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace !important;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border: 1px solid #dadfe1;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #47494d;
+    padding: 0.8rem;
+}
+
+.file-names {
+    word-wrap: break-word;
+}
+
+.table th,
+.table td {
+    padding: 0.8rem;
+}
+
+.product-additional-information table thead tr:first-child {
+    display: none;
+}
+
+.product-additional-information table tbody tr:last-child {
+    display: none;
+}
+
+.markdown p img {
+    max-width: 100%;
+    height: auto;
+}
