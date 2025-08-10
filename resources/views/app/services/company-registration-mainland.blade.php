@@ -40,6 +40,9 @@ $title = 'Company Registration Mainland';
                         <div class="side-title">Overview</div>
                         <div class="contact-details-box">
                             <div class="text-gray w-richtext">
+                                <p>- Expand to Local & International Markets</p>
+                                <p>- Why Mainland company in Dubai?</p>
+                                <p>- Mainland Licenses in Dubai</p>
                                 <p>- Mainland Business License Setup</p>
                                 <p>- Business Activity & Trade Name Support</p>
                                 <p>- Legal Documentation & Office Solutions</p>
@@ -70,6 +73,18 @@ $title = 'Company Registration Mainland';
                     <div class="all-caps-title">service</div>
                     <h1 class="less-top-margin _10-pixels">Mainland Business License Coverage</h1>
                     <p>Beyond just a license—comprehensive support for your UAE business launch and operations.</p>
+                    <h1 class="less-top-margin _10-pixels">Expand Without Limits – Your Gateway to Local & International Markets</h1>
+                    <p>Starting a business in Dubai Mainland allows you to trade anywhere in the UAE and internationally without restrictions. At StarWay, we make the process simple and efficient, handling everything from legal structure to license issuance, local sponsor arrangements (if needed), and visa quotas.</p>
+                    <p>With access to government projects, retail space, and full operational freedom, Mainland registration is ideal for businesses looking to grow fast and stay flexible. We handle everything: trade license, local approvals, tenant registration (Ejari), MoA drafting, and visa quotas-so your business starts fully compliant and operational.</p>
+                    <h1 class="less-top-margin _10-pixels">Why Consider a Mainland Company in Dubai?</h1>
+                    <p>Setting up a mainland company in Dubai offers unmatched flexibility and growth potential. You can trade anywhere in the UAE and beyond, take on government contracts, and operate without limitations on location or client type. Mainland companies also offer full visa eligibility, no currency restrictions, and the option to open offices anywhere. Whether you're planning to scale, hire employees, or diversify your offerings-mainland setup gives you the legal and commercial freedom to do it all.</p>
+                    <h1 class="less-top-margin _10-pixels">Types of Mainland Licenses in Dubai</h1>
+                    <p>Dubai Mainland offers different types of licenses to suit a wide range of business activities. Choosing the right one is essential for compliance and long-term success. At StarWay, we help you identify and apply for the license that matches your goals.</p>
+                    <ul>
+                        <li><strong>Commercial License:</strong> Perfect for businesses involved in trading, retail, and general commerce-enables importing, exporting, and selling goods.</li>
+                        <li><strong>Industrial License:</strong> Tailored for manufacturing and production companies—grants permission to set up factories and industrial facilities.</li>
+                        <li><strong>Professional License:</strong> Designed for service providers like consultants, IT firms, and healthcare professionals-allows full operational freedom in the UAE mainland.</li>
+                    </ul>
                     <div class="bottom-line-2"></div>
                     <div class="bottom-line-2"></div>
                 </div>

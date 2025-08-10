@@ -19,7 +19,7 @@
                 <!-- Business Setup -->
                 <div class="compact-dropdown">
                     <a href="#" class="nav-link" onclick="toggleDropdown(event, 'business-setup')">
-                        Business setup
+                        Business Setup
                         <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -27,70 +27,82 @@
                     </a>
                     <div class="dropdown-menu" id="business-setup">
                         <ul>
-                            <li><a href="{{ route('services.business-setup') }}">Business setup</a></li>
-                            <li><a href="{{ route('services.company-registration-mainland') }}">Company registration in mainland</a></li>
-                            <li><a href="{{ route('services.company-registration-freezone') }}">Company registration freezone</a></li>
+                            <li><a href="{{ route('services.business-setup') }}">Business Setup</a></li>
+                            <li><a href="{{ route('services.company-registration-mainland') }}">Company Registration in Mainland</a></li>
+                            <li><a href="{{ route('services.company-registration-freezone') }}">Company Registration Freezone</a></li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Business license renewal
+                                    Business License Renewal
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Business license renewal</h4>
-                                    <p>Quick and hassle-free support to renew your trade license and keep your operations running smoothly.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Business License Renewal</h4>
+                                        <p>Quick and hassle-free support to renew your trade license and keep your operations running smoothly.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Corporate bank account opening assistance
+                                    Corporate Bank Account Opening Assistance
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Corporate bank account opening assistance</h4>
-                                    <p>Guidance and documentation support to open a UAE business bank account with top local banks.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Corporate Bank Account Opening Assistance</h4>
+                                        <p>Guidance and documentation support to open a UAE business bank account with top local banks.</p>
+                                    </div>
+                                </a>
                             </li>
-                            <li><a href="{{ route('services.office-flexi-desk-arrangement') }}">Office flexi desk arrangement</a></li>
+                            <li><a href="{{ route('services.office-flexi-desk-arrangement') }}">Office Flexi Desk Arrangement</a></li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Labour/ work permit and employment services
+                                    Labour/ Work Permit and Employment Services
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Labour/ work permit and employment services</h4>
-                                    <p>We handle work permit processing and employee visa formalities for seamless onboarding.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Labour/ Work Permit and Employment Services</h4>
+                                        <p>We handle work permit processing and employee visa formalities for seamless onboarding.</p>
+                                    </div>
+                                </a>
                             </li>
-                            <li><a href="{{ route('services.corporate-pro-services') }}">Corporate PRO services</a></li>
+                            <li><a href="{{ route('services.corporate-pro-services') }}">Corporate PRO Services</a></li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Legal compliance assistance
+                                    Legal Compliance Assistance
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Legal compliance assistance</h4>
-                                    <p>Stay compliant with UAE regulations through regular updates and expert advisory.</p>
-                                </div>
-                            </li>
-                            <li class="has-popup navbar-link">
-                                <a href="#" class="popup-trigger">
-                                    Trademark registration assistance
-                                    <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Legal Compliance Assistance</h4>
+                                        <p>Stay compliant with UAE regulations through regular updates and expert advisory.</p>
+                                    </div>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Trademark registration assistance</h4>
-                                    <p>Protect your brand with full support for trademark search, filing, and registration.</p>
-                                </div>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Company liquidation
+                                    Trademark Registration Assistance
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Company liquidation</h4>
-                                    <p>End your business operations legally with clear steps and documentation handled for you.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Trademark Registration Assistance</h4>
+                                        <p>Protect your brand with full support for trademark search, filing, and registration.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="has-popup navbar-link">
+                                <a href="#" class="popup-trigger">
+                                    Company Liquidation
+                                    <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
+                                </a>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Company Liquidation</h4>
+                                        <p>End your business operations legally with clear steps and documentation handled for you.</p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -99,7 +111,7 @@
                 <!-- Financial Services Assistance -->
                 <div class="compact-dropdown">
                     <a href="#" class="nav-link" onclick="toggleDropdown(event, 'financial-services')">
-                        Financial services assistance
+                        Financial Services Assistance
                         <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -109,45 +121,53 @@
                         <ul>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Accounting service assistance
+                                    Accounting Service Assistance
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Accounting service assistance</h4>
-                                    <p>Professional accounting solutions tailored to your business needs in the UAE.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Accounting Service Assistance</h4>
+                                        <p>Professional accounting solutions tailored to your business needs in the UAE.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
                                     Bookkeeping
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Bookkeeping</h4>
-                                    <p>Accurate record-keeping of your financial transactions with ongoing support.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Bookkeeping</h4>
+                                        <p>Accurate record-keeping of your financial transactions with ongoing support.</p>
+                                    </div>
+                                </a>
                             </li>
-                            <li><a href="{{ route('services.corporate-tax-registration') }}">Corporate tax registration</a></li>
+                            <li><a href="{{ route('services.corporate-tax-registration') }}">Corporate Tax Registration</a></li>
                             <li><a href="{{ route('services.tax-and-vat') }}">Tax and Vat</a></li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
                                     Auditing
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Auditing</h4>
-                                    <p>Assistance in preparing and managing professional audit reports as per UAE law.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Auditing</h4>
+                                        <p>Assistance in preparing and managing professional audit reports as per UAE law.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Legal compliance
+                                    Legal Compliance
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Legal compliance</h4>
-                                    <p>Stay compliant with UAE regulations through regular updates and expert advisory.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Legal Compliance</h4>
+                                        <p>Stay compliant with UAE regulations through regular updates and expert advisory.</p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -156,7 +176,7 @@
                 <!-- Property consulting -->
                 <div class="compact-dropdown">
                     <a href="#" class="nav-link" onclick="toggleDropdown(event, 'property-consulting')">
-                        Property consulting
+                        Property Consulting
                         <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -166,45 +186,53 @@
                         <ul>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Property investment consulting
+                                    Property Investment Consulting
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Property investment consulting</h4>
-                                    <p>Make smart real estate investments with expert market insights and legal guidance.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Property Investment Consulting</h4>
+                                        <p>Make smart real estate investments with expert market insights and legal guidance.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Property valuation service
+                                    Property Valuation Service
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Property valuation service</h4>
-                                    <p>We connect you with certified valuers to determine accurate property values in the UAE.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Property Valuation Service</h4>
+                                        <p>We connect you with certified valuers to determine accurate property values in the UAE.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Mortgage advice
+                                    Mortgage Advice
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Mortgage advice</h4>
-                                    <p>Expert assistance in finding the right mortgage plans and bank offers suited to your needs.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Mortgage Advice</h4>
+                                        <p>Expert assistance in finding the right mortgage plans and bank offers suited to your needs.</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="has-popup navbar-link">
                                 <a href="#" class="popup-trigger">
-                                    Advice on the official MOU
+                                    Advice on the Official MOU
                                     <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                 </a>
-                                <div class="info-popup">
-                                    <h4>Advice on the official MOU</h4>
-                                    <p>Ensure clarity and protection with professional guidance on property Memorandum of Understanding documents.</p>
-                                </div>
+                                <a href="{{ route('contact.index') }}">
+                                    <div class="info-popup">
+                                        <h4>Advice on the Official MOU</h4>
+                                        <p>Ensure clarity and protection with professional guidance on property Memorandum of Understanding documents.</p>
+                                    </div>
+                                </a>
                             </li>
-                            <li><a href="{{ route('services.the-will') }}">The will</a></li>
+                            <li><a href="{{ route('services.the-will') }}">The Will</a></li>
                         </ul>
                     </div>
                 </div>
@@ -220,179 +248,211 @@
                     </a>
                     <div class="dropdown-menu wide" id="services">
                         <div class="menu-column">
-                            <h4>Immigration services</h4>
+                            <h4>Immigration Services</h4>
                             <ul>
                                 <!-- <li><a href="{{ route('services.immigration-services') }}">Immigration Services</a></li> -->
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE residence visa
+                                        UAE Residence Visa
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE residence visa</h4>
-                                        <p>End-to-end support for obtaining a UAE residence visa for you and your dependents.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Residence Visa</h4>
+                                            <p>End-to-end support for obtaining a UAE residence visa for you and your dependents.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE residence visa fast track
+                                        UAE Residence Visa Fast Track
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE residence visa fast track</h4>
-                                        <p>Get your UAE residency visa processed faster with priority handling.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Residence Visa Fast Track</h4>
+                                            <p>Get your UAE residency visa processed faster with priority handling.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
                                         Medical & Emirates ID
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Medical & Emirates ID</h4>
-                                        <p>We assist in completing medical tests and obtaining Emirates ID with minimal wait time.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Medical & Emirates ID</h4>
+                                            <p>We assist in completing medical tests and obtaining Emirates ID with minimal wait time.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Entry permit
+                                        Entry Permit
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Entry permit</h4>
-                                        <p>Support with entry permits, including special handling for restricted nationalities.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Entry Permit</h4>
+                                            <p>Support with entry permits, including special handling for restricted nationalities.</p>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li><a href="{{ route('services.uae-golden-visa') }}">UAE golden visa</a></li>
+                                <li><a href="{{ route('services.uae-golden-visa') }}">UAE Golden Visa</a></li>
                             </ul>
                         </div>
                         <div class="menu-column">
-                            <h4>Documents clearing services</h4>
+                            <h4>Documents Clearing Services</h4>
                             <ul>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Tax residency certificate
+                                        Tax Residency Certificate
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Tax residency certificate</h4>
-                                        <p>Apply for a TRC in the UAE with our guided documentation and application process.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Tax Residency Certificate</h4>
+                                            <p>Apply for a TRC in the UAE with our guided documentation and application process.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Police clearance
+                                        Police Clearance
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Police clearance</h4>
-                                        <p>Get help with applying and receiving UAE police clearance certificates for legal or immigration needs.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Police Clearance</h4>
+                                            <p>Get help with applying and receiving UAE police clearance certificates for legal or immigration needs.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Power of attorney
+                                        Power of Attorney
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Power of attorney</h4>
-                                        <p>We assist in drafting and notarizing Power of Attorney documents legally accepted in the UAE.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Power of Attorney</h4>
+                                            <p>We assist in drafting and notarizing Power of Attorney documents legally accepted in the UAE.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Notary service assistance
+                                        Notary Service Assistance
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Notary service assistance</h4>
-                                        <p>Support with preparing and notarizing official legal documents through UAE courts.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Notary Service Assistance</h4>
+                                            <p>Support with preparing and notarizing official legal documents through UAE courts.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
                                         UAE MOFA
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE MOFA attestation</h4>
-                                        <p>Ensure your documents are attested by the UAE Ministry of Foreign Affairs smoothly.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE MOFA Attestation</h4>
+                                            <p>Ensure your documents are attested by the UAE Ministry of Foreign Affairs smoothly.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Embassy attestation
+                                        Embassy Attestation
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Embassy attestation</h4>
-                                        <p>Fast-track embassy attestation for your business or personal documents.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Embassy Attestation</h4>
+                                            <p>Fast-track embassy attestation for your business or personal documents.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Consulate attestation
+                                        Consulate Attestation
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Consulate attestation</h4>
-                                        <p>We manage document attestation through UAE consulates as per your needs.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Consulate Attestation</h4>
+                                            <p>We manage document attestation through UAE consulates as per your needs.</p>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="menu-column">
-                            <h4>Exclusive services</h4>
+                            <h4>Exclusive Services</h4>
                             <ul>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE bank account opening as
+                                        UAE Bank Account Opening As
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE bank account opening as</h4>
-                                        <p>Guidance and support for opening your UAE bank account efficiently.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Bank Account Opening As</h4>
+                                            <p>Guidance and support for opening your UAE bank account efficiently.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE residence visa
+                                        UAE Residence Visa
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE residence visa</h4>
-                                        <p>End-to-end support for obtaining a UAE residence visa for you and your dependents.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Residence Visa</h4>
+                                            <p>End-to-end support for obtaining a UAE residence visa for you and your dependents.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE driving license
+                                        UAE Driving License
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE driving license</h4>
-                                        <p>Get expert help to convert or apply for your UAE driving license in record time.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Driving License</h4>
+                                            <p>Get expert help to convert or apply for your UAE driving license in record time.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE tourist visa
+                                        UAE Tourist Visa
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>UAE tourist visa</h4>
-                                        <p>Fast and efficient processing of UAE tourist visas—approved in as little as 24 hours.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>UAE Tourist Visa</h4>
+                                            <p>Fast and efficient processing of UAE tourist visas—approved in as little as 24 hours.</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        Entry permit
+                                        Entry Permit
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
-                                    <div class="info-popup">
-                                        <h4>Entry permit</h4>
-                                        <p>Support with entry permits, including special handling for restricted nationalities.</p>
-                                    </div>
+                                    <a href="{{ route('contact.index') }}">
+                                        <div class="info-popup">
+                                            <h4>Entry Permit</h4>
+                                            <p>Support with entry permits, including special handling for restricted nationalities.</p>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -407,7 +467,7 @@
                 </div>
                 <div class="compact-dropdown">
                     <a href="{{ route('contact.index') }}" class="nav-link">
-                        Contact us
+                        Contact Us
                         <div class="underline-hover"></div>
                     </a>
                 </div>

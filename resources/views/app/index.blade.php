@@ -100,7 +100,7 @@ $title = 'contact us';
                           rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         opacity: 0;
                       " class="bottom-word">
-                                Reach<br />
+                                With Expert<br />
                             </h1>
                         </div>
                     </div>
@@ -212,7 +212,7 @@ $title = 'contact us';
                           rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         opacity: 0;
                       " class="bottom-word">
-                                Further<span class="dot">.</span><span style="
+                                Guidance<span class="dot">.</span><span style="
                           -webkit-transform: translate3d(0, 100%, 0)
                             scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
                             skew(0, 0);
@@ -404,13 +404,13 @@ $title = 'contact us';
                           rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         opacity: 0;
                       " class="h3">
-                                Business registration<br />
+                                Business Registration<br />
                             </h3>
                         </div>
                         <div style="display: flex" class="hidden">
                             <h3 data-w-id="cd8eaeeb-0aef-98f6-89fa-ed27a38b52a9" style="opacity: 0"
                                 class="h3 no-top-margin">
-                                process
+                                Process
                             </h3>
                         </div>
                         <div class="subtitle-box">
@@ -730,7 +730,7 @@ $title = 'contact us';
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
                     " class="button-box">
-                            <a href="#Services" data-w-id="43f5e98e-07d1-8deb-c7bb-03c70956bd33"
+                            <a href="{{ route('services.business-setup') }}" data-w-id="43f5e98e-07d1-8deb-c7bb-03c70956bd33"
                                 style="opacity: 0" class="button-boxed-outline w-button">learn more</a>
                         </div>
                     </div>
@@ -950,10 +950,10 @@ $title = 'contact us';
                 </div>
                 <div class="feature-item green">
                     <div>
-                        <div class="text-block">Get these Awesome<br />Features</div>
+                        <div class="text-block">Reach out to <br />Starway LLC</div>
                         <div class="paragraph-box">
                             <p class="paragraph-medium">
-                                With more than 25 years of we can deliver
+                                Select our best exclusive service for your business today!
                             </p>
                         </div>
                     </div>
@@ -990,11 +990,11 @@ $title = 'contact us';
                       transform: translate3d(0, 115%, 0) scale3d(1, 1, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " class="h4">
-                            What We Can Do For You
+                            What We Can Offer You
                         </h4>
                     </div>
                     <div class="subtitle-box _10-pixels-margin">
-                        <p class="subtitle">The Corporatex template is for you</p>
+                        <p class="subtitle">Comprehensive solutions to establish, protect, and grow your business in the UAE</p>
                     </div>
                 </div>
             </div>
@@ -1012,7 +1012,7 @@ $title = 'contact us';
                       transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
-                    " href="/services/wealth-management" class="link-block w-inline-block"><img
+                    " href="{{ route('services.business-setup') }}" class="link-block w-inline-block"><img
                                 src="{{ asset('images/services-bg.jpg') }}" loading="lazy" width="526.5"
                                 sizes="(max-width: 767px) 100vw, 526.5px" alt="" srcset="
                         images/services-bg-p-500.jpg  500w,
@@ -1054,7 +1054,7 @@ $title = 'contact us';
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
                     " class="services-text-box">
-                            <a href="/services/wealth-management" class="preview-link c-preview-link">Business Set Up / Company Formation</a>
+                            <a href="{{ route('services.business-setup') }}" class="preview-link c-preview-link">Business Set Up / Company Formation</a>
                             <div class="paragraph-box">
                                 <p class="paragraph-medium c-paragraph-medium">
                                     Start your business in Dubai with expert guidance on company registration, licensing, and legal structuring in Mainland or Free Zones.
@@ -1062,7 +1062,7 @@ $title = 'contact us';
                             </div>
                             <div class="text-link-box">
                                 <a data-w-id="9b9606a1-deeb-12f3-1616-816f865a2ddf"
-                                    href="/services" class="text-link-block w-inline-block">
+                                    href="{{ route('services.business-setup') }}" class="text-link-block w-inline-block">
                                     <div class="right-margin">Learn more</div>
                                     <div class="circle-arrow"></div>
                                 </a>
@@ -1081,7 +1081,7 @@ $title = 'contact us';
                       transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
-                    " href="/services/taxes-and-accounting" class="link-block w-inline-block"><img
+                    " href="{{ route('services.the-will') }}" class="link-block w-inline-block"><img
                                 src="{{ asset('images/services-bg.jpg') }}" loading="lazy" width="526.5"
                                 sizes="(max-width: 767px) 100vw, 526.5px" alt="" srcset="
                         images/services-bg-p-500.jpg  500w,
@@ -1123,7 +1123,7 @@ $title = 'contact us';
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
                     " class="services-text-box">
-                            <a href="/services/taxes-and-accounting" class="preview-link">Estate Planning / The Will</a>
+                            <a href="{{ route('services.the-will') }}" class="preview-link">Estate Planning / The Will</a>
                             <div class="paragraph-box">
                                 <p class="paragraph-medium">
                                     Secure your future with will registration and estate planning solutions tailored to UAE regulations and your personal needs.
@@ -1131,7 +1131,7 @@ $title = 'contact us';
                             </div>
                             <div class="text-link-box">
                                 <a data-w-id="9b9606a1-deeb-12f3-1616-816f865a2ddf"
-                                    href="/services/taxes-and-accounting"
+                                    href="{{ route('services.the-will') }}"
                                     class="text-link-block w-inline-block">
                                     <div class="right-margin">Learn more</div>
                                     <div class="circle-arrow"></div>
@@ -1151,7 +1151,7 @@ $title = 'contact us';
                       transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
-                    " href="/services/financial-planning" class="link-block w-inline-block"><img
+                    " href="{{ route('services.uae-golden-visa') }}" class="link-block w-inline-block"><img
                                 src="{{ asset('images/services-bg.jpg') }}" loading="lazy" width="526.5"
                                 sizes="(max-width: 767px) 100vw, 526.5px" alt="" srcset="
                         images/services-bg-p-500.jpg  500w,
@@ -1159,7 +1159,7 @@ $title = 'contact us';
                         images/services-bg.jpg       1053w
                       " />
                             <div style="
-                        background-image: url('images/pexels-fauxels-3182773.jpg');
+                        background-image: url('images/golden-visa.jpg');
                       " class="hover-image"></div>
                             <div style="opacity: 0; display: flex" class="hover-overlay">
                                 <div style="
@@ -1193,15 +1193,15 @@ $title = 'contact us';
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
                     " class="services-text-box">
-                            <a href="/services/financial-planning" class="preview-link">Property Consulting</a>
+                            <a href="{{ route('services.uae-golden-visa') }}" class="preview-link">UAE Golden Visa</a>
                             <div class="paragraph-box">
                                 <p class="paragraph-medium">
-                                    Invest smartly with our expert advice on real estate, property valuation, mortgage assistance, and legal documentation.
+                                    Secure Long-Term Residency in the UAE—flexible, secure, and designed for outstanding professionals and investors.
                                 </p>
                             </div>
                             <div class="text-link-box">
                                 <a data-w-id="9b9606a1-deeb-12f3-1616-816f865a2ddf"
-                                    href="/services/financial-planning" class="text-link-block w-inline-block">
+                                    href="{{ route('services.uae-golden-visa') }}" class="text-link-block w-inline-block">
                                     <div class="right-margin">Learn more</div>
                                     <div class="circle-arrow"></div>
                                 </a>
@@ -1220,7 +1220,7 @@ $title = 'contact us';
                       transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
-                    " href="/services/one-to-one-support" class="link-block w-inline-block"><img
+                    " href="{{ route('services.corporate-pro-services') }}" class="link-block w-inline-block"><img
                                 src="{{ asset('images/services-bg.jpg') }}" loading="lazy" width="526.5"
                                 sizes="(max-width: 767px) 100vw, 526.5px" alt="" srcset="
                         images/services-bg-p-500.jpg  500w,
@@ -1262,7 +1262,7 @@ $title = 'contact us';
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                       opacity: 0;
                     " class="services-text-box">
-                            <a href="/services/one-to-one-support" class="preview-link">Immigration / PRO Services</a>
+                            <a href="{{ route('services.corporate-pro-services') }}" class="preview-link">Immigration / PRO Services</a>
                             <div class="paragraph-box">
                                 <p class="paragraph-medium">
                                     We handle all immigration and PRO requirements - residency visas, permits, document processing-so you can focus on your business.
@@ -1270,7 +1270,7 @@ $title = 'contact us';
                             </div>
                             <div class="text-link-box">
                                 <a data-w-id="9b9606a1-deeb-12f3-1616-816f865a2ddf"
-                                    href="/services/one-to-one-support" class="text-link-block w-inline-block">
+                                    href="{{ route('services.corporate-pro-services') }}" class="text-link-block w-inline-block">
                                     <div class="right-margin">Learn more</div>
                                     <div class="circle-arrow"></div>
                                 </a>
@@ -1323,7 +1323,7 @@ $title = 'contact us';
                             <!-- <div class="side-button">
                                 <a href="/faq" class="button w-button">view all Faq</a>
                             </div> -->
-                            <a href="{{ route('contact.index') }}" class="button-filled w-button">Contact us</a>
+                            <a href="{{ route('contact.index') }}" class="button-filled w-button">Get the Best Package</a>
                         </div>
                     </div>
                 </div>
@@ -1369,7 +1369,7 @@ $title = 'contact us';
                         </h4>
                     </div>
                     <div class="subtitle-box _10-pixels-margin">
-                        <p class="subtitle">Corporatex template is for you</p>
+                        <p class="subtitle">A passionate group of professionals</p>
                     </div>
                 </div>
             </div>
@@ -1556,9 +1556,9 @@ $title = 'contact us';
                         </div>
                     </div>
                     <div class="team-text-box">
-                        <div class="job-title">adviser</div>
+                        <div class="job-title">Business Development Manager</div>
                         <div>
-                            <div class="team-name">Maria Zurich<br></div>
+                            <div class="team-name">Chaima Dabussi<br></div>
                         </div>
                     </div>
                 </div>

@@ -84,13 +84,13 @@ $title = 'Corporate Pro Services';
                     </ul>
                     <h3>Our PRO Service Offerings</h3>
                     <ul>
-                        <li>Trade license renewal</li>
-                        <li>Visa processing and cancellation</li>
-                        <li>Emirates ID application and renewal</li>
-                        <li>Labor card processing</li>
-                        <li>No Objection Certificate (NOC) issuance</li>
-                        <li>Document attestation and notarization</li>
-                        <li>Government correspondence management</li>
+                        <li>Trade License Renewal</li>
+                        <li>Visa Processing and Cancellation</li>
+                        <li>Emirates ID Application and Renewal</li>
+                        <li>Labor Card Processing</li>
+                        <li>No Objection Certificate (NOC) Issuance</li>
+                        <li>Document Attestation and Notarization</li>
+                        <li>Government Correspondence Management</li>
                     </ul>
                     <h3>Required Documents for PRO Services</h3>
                     <ul>

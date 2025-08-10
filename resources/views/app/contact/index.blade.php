@@ -179,11 +179,10 @@ $title = 'Home';
                         style="opacity: 0"
                         class="left-heading-box">
                         <div>
-                            <h2 class="h2 no-top-margin">We are Here to Help</h2>
+                            <h2 class="h2 no-top-margin">Prefer to write to us?</h2>
                             <div>
                                 <p class="subtitle">
-                                    Corporatex is the perfect Business Webflow Template you
-                                    need for your Company or Startup.
+                                    Fill out the form below and our team will get back to you as soon as possible.
                                 </p>
                             </div>
                         </div>
@@ -209,12 +208,13 @@ $title = 'Home';
                                     placeholder="Your name"
                                     type="text"
                                     id="field"
-                                    required="" /><input
+                                    required="" />
+                                <input
                                     class="field w-input"
                                     maxlength="256"
-                                    name="Last-Name"
-                                    data-name="Last Name"
-                                    placeholder="Your last name"
+                                    name="service"
+                                    data-name="The service/s you are looking for"
+                                    placeholder="The service/s you are looking for"
                                     type="text"
                                     id="field"
                                     required="" />

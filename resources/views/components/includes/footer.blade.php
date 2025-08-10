@@ -72,7 +72,7 @@
                         </div>
                         <div class="footer-top-margin">
                             <a href="{{ route('services.the-will') }}" class="footer-menu-link w-inline-block">
-                                <div>Estate Planning & Wills</div>
+                                <div>Estate Planning & The Wills</div>
                             </a>
                         </div>
                         <div class="footer-top-margin">
@@ -141,10 +141,10 @@
                 <div class="divider-line"></div>
             </div>
         </div>
-        <div class="notice">
+        <!-- <div class="notice">
             <div class="notice-text">
                 © 2025 PhyxleLoom. All rights reserved.
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
