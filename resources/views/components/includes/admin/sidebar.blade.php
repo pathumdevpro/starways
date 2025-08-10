@@ -1,50 +1,56 @@
-<nav class="sidebar offcanvas-start offcanvas-xxl" id="sidebar" tabindex="-1">
-    <div class="offcanvas-header bg-secondary">
-        <a class="sidebar-brand text-uppercase d-flex align-items-center" href="{{ route('admin.index') }}">
-            <img alt="icon" class="me-2" height="24" src="{{ asset('images/admin/icon.svg') }}" width="24"> Admin Panel
-        </a>
-        <button class="btn btn-secondary" id="mode">
-            <i class="fa-solid fa-sun"></i>
+<div class="navbar">
+    <div class="navbar-content">
+        <button id="sidebar" class="btn btn-square">
+            <i class="fa-solid fa-bars"></i>
         </button>
     </div>
-    <div class="offcanvas-body">
-        <ul class="sidebar-nav">
-            <li>
-                <h6 class="sidebar-header text-uppercase">Dashboard</h6>
-            </li>
-            <li class="nav-item">
-                <a aria-current="{{ request()->routeIs('admin.index*') ? 'page' : '' }}" class="nav-link {{ request()->routeIs('admin.index*') ? 'active' : '' }}" href="{{ route('admin.index') }}">
-                    <i class="fa-solid fa-home me-2"></i> Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a aria-current="{{ request()->routeIs('admin.index*') ? 'page' : '' }}" class="nav-link {{ request()->routeIs('admin.accounts.profile') ? 'active' : '' }}" href="{{ route('admin.accounts.profile') }}">
-                    <i class="fa-solid fa-user me-2"></i> Profile
-                </a>
-            </li>
-            <li class="nav-item">
-                <a aria-current="{{ request()->routeIs('admin.index*') ? 'page' : '' }}" class="nav-link {{ request()->routeIs('logout') ? 'active' : '' }}" href="{{ route('logout') }}">
-                    <i class="fa-solid fa-right-from-bracket me-2"></i> Logout
-                </a>
-            </li>
-            <li class="mt-3">
-                <h6 class="sidebar-header text-uppercase">Application</h6>
-            </li>
-           
-            
-            <li class="mt-3">
-                <h6 class="sidebar-header text-uppercase">External Links</h6>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('index') }}" target="_blank">
-                    <i class="fa-solid fa-globe me-2"></i> Website
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://xynosync.com" target="_blank">
-                    <i class="fa-solid fa-globe me-2"></i> XynoSync
-                </a>
-            </li>
-        </ul>
+    <a href="#" class="navbar-brand">
+        <img src="{{ asset('images/admin/icon.png') }}" alt="icon" width="auto" height="30"> Admin Panel
+    </a>
+    <span class="navbar-text">
+        <span class="version"></span>
+    </span>
+</div>
+<div class="sidebar">
+    <div class="sidebar-menu">
+        <h6 class="sidebar-title">Dashboard</h6>
+        <div class="sidebar-divider"></div>
+        <a href="{{ route('admin.index') }}" class="sidebar-link sidebar-link-with-icon {{ request()->is('admin') ? 'active' : '' }}">
+            <span class="sidebar-icon {{ request()->is('admin') ? 'bg-primary text-white' : '' }}">
+                <i class="fa-solid fa-home"></i>
+            </span>
+            Home
+        </a>
+        <a href="{{ route('admin.accounts.profile') }}" class="sidebar-link sidebar-link-with-icon {{ request()->is('admin/accounts/profile') ? 'active' : '' }}">
+            <span class="sidebar-icon {{ request()->is('admin/accounts/profile') ? 'bg-primary text-white' : '' }}">
+                <i class="fa-solid fa-user"></i>
+            </span>
+            Profile
+        </a>
+        <a href="{{ route('logout') }}" class="sidebar-link sidebar-link-with-icon {{ request()->is('logout') ? 'active' : '' }}">
+            <span class="sidebar-icon {{ request()->is('logout') ? 'bg-primary text-white' : '' }}">
+                <i class="fa-solid fa-sign-out-alt"></i>
+            </span>
+            Logout
+        </a>
+        <h6 class="sidebar-title mt-20">Application</h6>
+        <div class="sidebar-divider"></div>
+        <a href="{{ route('admin.articles.index') }}" class="sidebar-link sidebar-link-with-icon {{ request()->is('admin/articles*') ? 'active' : '' }}">
+            <span class="sidebar-icon {{ request()->is('admin/articles*') ? 'bg-primary text-white' : '' }}">
+                <i class="fa-solid fa-file-lines"></i>
+            </span>
+            Articles
+        </a>
+        <h6 class="sidebar-title mt-20">Content</h6>
+        <div class="sidebar-divider"></div>
+        
+        <h6 class="sidebar-title mt-20">External Links</h6>
+        <div class="sidebar-divider"></div>
+        <a href="{{ route('index') }}" class="sidebar-link sidebar-link-with-icon">
+            <span class="sidebar-icon bg-danger text-white">
+                <i class="fa-solid fa-globe"></i>
+            </span>
+            Website
+        </a>
     </div>
-</nav>
+</div>

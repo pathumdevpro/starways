@@ -79,6 +79,36 @@ class AuthenticationController extends Controller
     }
 
     /**
+     * Update user password.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function updatePassword(Request $request)
+    {
+        $inputs = $request->validate([
+            'new_password' => ['required', 'different:current_password', RulesPassword::min(8)->letters()->numbers()->mixedCase()->symbols()],
+            'confirm_new_password' => ['same:new_password'],
+            'current_password' => ['required', 'current_password:web'],
+        ]);
+
+        auth()->user()->update([
+            'password' => bcrypt($inputs['new_password']),
+        ]);
+
+        $previousRoute = $this->getPreviousRoute();
+        if ($previousRoute == '/admin/accounts/profile') {
+            return redirect()->route('admin.accounts.profile')->with([
+                'success' => 'The password is updated.',
+            ]);
+        }
+
+        return redirect()->route('index')->with([
+            'success' => 'The password is updated.',
+        ]);
+    }
+
+    /**
      * Display logout page and logout user.
      */
     public function logout(Request $request)
@@ -170,5 +200,19 @@ class AuthenticationController extends Controller
         return redirect()->route('login')->with([
             'success' => $status,
         ]);
+    }
+
+    /**
+     * Get previous route.
+     *
+     * @return string
+     */
+
+    private function getPreviousRoute()
+    {
+        $appUrl = url('/');
+        $previousUrl = url()->previous();
+
+        return str($previousUrl)->replace($appUrl, '');
     }
 }

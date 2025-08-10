@@ -16,13 +16,15 @@ $title = 'Blogs';
             <div class="on-load-bg"></div>
             <div class="content-wrapper w-container">
                 <div class="blog-hero-box">
-                    <div><a href="/category/updates" class="cateogry-link white">Updates</a></div>
+                    <div><a href="#" class="cateogry-link white">Updates</a></div>
                     <div data-w-id="adcb5c8f-1390-e84e-bf86-9aba2f80907b" class="hidden"><a
-                            href="/post/we-launch-corporatex-template-this-week" class="hero-link-title">We
-                            Launch Corporatex Template this Week!</a></div>
+                            href="/post/we-launch-corporatex-template-this-week" class="hero-link-title">
+                                Latest news and updates
+                        </a></div>
                     <div class="max-600-pixels">
-                        <p class="hero-subtitle center">You need a design that sets you apart from your
-                            competitors don&#x27;t look average.</p>
+                        <p class="hero-subtitle center">
+                            Read latest news and updates from our Star Ways team and our clients around the world.
+                        </p>
                     </div>
                     <div class="hidden">
                         <div class="button-box"><a href="/post/we-launch-corporatex-template-this-week"
@@ -42,124 +44,42 @@ $title = 'Blogs';
             </div>
             <div class="w-dyn-list">
                 <div role="list" class="flex wrap w-dyn-items">
+                    @forelse ($blogs as $blog)
                     <div data-w-id="ca0dca68-3d73-d698-3909-0c995236a588"
                         style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                         role="listitem" class="posts-grid w-dyn-item">
                         <div class="relative-auto"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a58a"
-                                href="{{ route('blogs.show', ['blog' => 'build-a-top-business-plan-in-5-steps']) }}"
+                                href="{{ route('blogs.show', $blog) }}"
                                 class="preview-link-block w-inline-block"><img src="images/post-bg.jpg"
                                     loading="lazy" width="560" alt="" />
-                                <div style="background-image:url(&quot;images/rudy-dong-qrfpug2lgbq-unsplash.jpg&quot;)"
+                                <div style="background-image:url({{ Storage::url('articles/' . $blog->image) }})"
                                     class="hover-image"></div>
                                 <div style="opacity:0;display:flex" class="hover-overlay">
                                     <div style="display:none;-webkit-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                                         class="button white">Read more</div>
                                 </div>
-                            </a><a href="/category/strategy" class="category-link">Strategy</a></div>
+                            </a>
+                            <!-- <a href="/category/strategy" class="category-link">Strategy</a> -->
+                        </div>
                         <div class="preview-text-container">
-                            <div class="preview-link-box"><a href="/post/how-to-find-great-consulting-experts"
-                                    class="preview-link">How To Find Great Consulting Experts</a></div>
+                            <div class="preview-link-box"><a href="{{ route('blogs.show', $blog) }}"
+                                    class="preview-link">{{ Str::limit($blog->title, 45) }}</a></div>
                             <div class="paragraph-box">
-                                <p class="paragraph-medium">You need a design that sets you apart from your
-                                    competitors don&#x27;t look average.</p>
+                                <p class="paragraph-medium">{{ Str::limit($blog->content, 110) }}</p>
                             </div>
                             <div class="text-link-box"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a597"
-                                    href="/post/how-to-find-great-consulting-experts"
+                                    href="{{ route('blogs.show', $blog) }}"
                                     class="text-link-block w-inline-block">
                                     <div class="right-margin">Learn more</div>
                                     <div class="circle-arrow"></div>
                                 </a></div>
                         </div>
                     </div>
-                    <div data-w-id="ca0dca68-3d73-d698-3909-0c995236a588"
-                        style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                        role="listitem" class="posts-grid w-dyn-item">
-                        <div class="relative-auto"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a58a"
-                                href="/post/build-a-top-business-plan-in-5-steps"
-                                class="preview-link-block w-inline-block"><img src="images/post-bg.jpg"
-                                    loading="lazy" width="560" alt="" />
-                                <div style="background-image:url(&quot;images/pexels-vlada-karpovich-8367798.jpg&quot;)"
-                                    class="hover-image"></div>
-                                <div style="opacity:0;display:flex" class="hover-overlay">
-                                    <div style="display:none;-webkit-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                                        class="button white">Read more</div>
-                                </div>
-                            </a><a href="/category/updates" class="category-link">Updates</a></div>
-                        <div class="preview-text-container">
-                            <div class="preview-link-box"><a href="/post/build-a-top-business-plan-in-5-steps"
-                                    class="preview-link">Build A Top Business Plan In 5 Steps</a></div>
-                            <div class="paragraph-box">
-                                <p class="paragraph-medium">You need a design that sets you apart from your
-                                    competitors don&#x27;t look average.</p>
-                            </div>
-                            <div class="text-link-box"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a597"
-                                    href="/post/build-a-top-business-plan-in-5-steps"
-                                    class="text-link-block w-inline-block">
-                                    <div class="right-margin">Learn more</div>
-                                    <div class="circle-arrow"></div>
-                                </a></div>
-                        </div>
+                    @empty
+                    <div class="w-dyn-empty">
+                        <div>There are no posts to show.</div>
                     </div>
-                    <div data-w-id="ca0dca68-3d73-d698-3909-0c995236a588"
-                        style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                        role="listitem" class="posts-grid w-dyn-item">
-                        <div class="relative-auto"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a58a"
-                                href="/post/7-problems-a-marketing-agency-can-solve"
-                                class="preview-link-block w-inline-block"><img src="images/post-bg.jpg"
-                                    loading="lazy" width="560" alt="" />
-                                <div style="background-image:url(&quot;images/pexels-alena-darmel-7641900.jpg&quot;)"
-                                    class="hover-image"></div>
-                                <div style="opacity:0;display:flex" class="hover-overlay">
-                                    <div style="display:none;-webkit-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                                        class="button white">Read more</div>
-                                </div>
-                            </a><a href="/category/strategy" class="category-link">Strategy</a></div>
-                        <div class="preview-text-container">
-                            <div class="preview-link-box"><a
-                                    href="/post/7-problems-a-marketing-agency-can-solve" class="preview-link">7
-                                    Problems A Marketing Agency Can Solve</a></div>
-                            <div class="paragraph-box">
-                                <p class="paragraph-medium">You need a design that sets you apart from your
-                                    competitors don&#x27;t look average.</p>
-                            </div>
-                            <div class="text-link-box"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a597"
-                                    href="/post/7-problems-a-marketing-agency-can-solve"
-                                    class="text-link-block w-inline-block">
-                                    <div class="right-margin">Learn more</div>
-                                    <div class="circle-arrow"></div>
-                                </a></div>
-                        </div>
-                    </div>
-                    <div data-w-id="ca0dca68-3d73-d698-3909-0c995236a588"
-                        style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                        role="listitem" class="posts-grid w-dyn-item">
-                        <div class="relative-auto"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a58a"
-                                href="/post/5-proven-tips-to-increase-your-net-income"
-                                class="preview-link-block w-inline-block"><img src="images/post-bg.jpg"
-                                    loading="lazy" width="560" alt="" />
-                                <div style="background-image:url(&quot;images/pexels-alena-darmel-7641920.jpg&quot;)"
-                                    class="hover-image"></div>
-                                <div style="opacity:0;display:flex" class="hover-overlay">
-                                    <div style="display:none;-webkit-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 13px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                                        class="button white">Read more</div>
-                                </div>
-                            </a><a href="/category/updates" class="category-link">Updates</a></div>
-                        <div class="preview-text-container">
-                            <div class="preview-link-box"><a
-                                    href="/post/5-proven-tips-to-increase-your-net-income"
-                                    class="preview-link">5 Proven Tips To Increase Your Net Income</a></div>
-                            <div class="paragraph-box">
-                                <p class="paragraph-medium">You need a design that sets you apart from your
-                                    competitors don&#x27;t look average.</p>
-                            </div>
-                            <div class="text-link-box"><a data-w-id="ca0dca68-3d73-d698-3909-0c995236a597"
-                                    href="/post/5-proven-tips-to-increase-your-net-income"
-                                    class="text-link-block w-inline-block">
-                                    <div class="right-margin">Learn more</div>
-                                    <div class="circle-arrow"></div>
-                                </a></div>
-                        </div>
-                    </div>
+                    @endforelse
                 </div>
                 <div role="navigation" aria-label="List" class="w-pagination-wrapper pagination"></div>
             </div>

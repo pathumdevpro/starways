@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+
 class BaseController extends Controller
 {
     /**
@@ -9,6 +11,8 @@ class BaseController extends Controller
      */
     public function index()
     {
-        return view('app.index');
+        return view('app.index', [
+            'blogs' => Article::orderBy('id', 'desc')->limit(2)->get(),
+        ]);
     }
 }

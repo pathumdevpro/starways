@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\Admin\AccountController as AdminAccountController;
+use App\Http\Controllers\Admin\AccountsController as AdminAccountsController;
+use App\Http\Controllers\Admin\ArticleController as AdminArticleController;
 use App\Http\Controllers\Admin\BaseController as AdminBaseController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\BaseController;
@@ -32,16 +33,15 @@ Route::middleware('web')->group(function () {
         Route::get('services/the-will', [ServiceController::class, 'the_will'])->name('services.the-will');
         Route::get('services/immigration-services', [ServiceController::class, 'immigration_services'])->name('services.immigration-services');
         Route::get('services/uae-golden-visa', [ServiceController::class, 'uae_golden_visa'])->name('services.uae-golden-visa');
-        Route::resource('blogs', BlogController::class)->only(['index', 'show'])->names(['index' => 'blogs.index']);
+        Route::resource('/blogs', BlogController::class)->only([ 'index' ,'show'])->scoped(['blog' => 'slug']);
         Route::resource('about', AboutController::class)->only(['index'])->names(['index' => 'about.index']);
         Route::resource('contact', ContactController::class)->only(['index'])->names(['index' => 'contact.index']);
     });
 
-    Route::prefix('/admin')->name('admin.')->group(function () {
-        Route::middleware('auth')->group(function () {
-            Route::resource('/', AdminBaseController::class)->only(['index']);
-            Route::get('/accounts/profile', [AdminAccountController::class, 'profile'])->name('accounts.profile');
-            Route::put('/accounts/update-password', [AdminAccountController::class, 'updatePassword'])->name('accounts.update-password');
-        });
+    Route::prefix('/admin')->name('admin.')->middleware('auth')->group(function () {
+        Route::get('/', [AdminBaseController::class, 'index'])->name('index');
+        Route::get('/accounts/profile', [AdminAccountsController::class, 'profile'])->name('accounts.profile');
+        Route::put('/accounts/update-password', [AuthenticationController::class, 'updatePassword'])->name('accounts.update-password');
+        Route::resource('/articles', AdminArticleController::class)->only(['index', 'store', 'show', 'update', 'destroy']);
     });
 });

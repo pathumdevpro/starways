@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Article;
 
 class BlogController extends Controller
 {
@@ -11,14 +11,19 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('app.blogs.index');
+        return view('app.blogs.index', [
+            'blogs' => Article::orderBy('id', 'desc')->get(),
+        ]);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Article $blog)
     {
-        return view('app.blogs.show');
+        return view('app.blogs.show', [
+            'blogs' => Article::inRandomOrder()->limit(2)->get(),
+            'blog' => $blog,
+        ]);
     }
 }
