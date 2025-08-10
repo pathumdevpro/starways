@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 
 @if (Route::currentRouteName() === 'contact.index')
-    <html data-wf-page="642b977704ea370b045dcd31" data-wf-site="63f3c02b670c563640ba280f" lang="en">
+<html data-wf-page="642b977704ea370b045dcd31" data-wf-site="63f3c02b670c563640ba280f" lang="en">
 @elseif (Route::currentRouteName() === 'index')
-    <html data-wf-page="642b977704ea37fcf05dcce3" data-wf-site="63f3c02b670c563640ba280f" lang="en">
+<html data-wf-page="642b977704ea37fcf05dcce3" data-wf-site="63f3c02b670c563640ba280f" lang="en">
 @elseif (Route::is('services.*'))
-    <html data-wf-page="642b977704ea37570c5dcd34" data-wf-site="63f3c02b670c563640ba280f" lang="en" data-wf-collection="642b977704ea37e0c45dcce7" data-wf-item-slug="financial-planning">
+<html data-wf-page="642b977704ea37570c5dcd34" data-wf-site="63f3c02b670c563640ba280f" lang="en" data-wf-collection="642b977704ea37e0c45dcce7" data-wf-item-slug="financial-planning">
 @elseif (Route::is('blogs.index'))
-    <html data-wf-page="642b977704ea3729965dcd05" data-wf-site="63f3c02b670c563640ba280f" lang="en">
+<html data-wf-page="642b977704ea3729965dcd05" data-wf-site="63f3c02b670c563640ba280f" lang="en">
 @elseif (Route::is('blogs.show'))
-    <html data-wf-page="642b977704ea37cd395dcd33" data-wf-site="63f3c02b670c563640ba280f" lang="en"
-        data-wf-collection="642b977704ea37977f5dcce8" data-wf-item-slug="we-launch-corporatex-template-this-week">
+<html data-wf-page="642b977704ea37cd395dcd33" data-wf-site="63f3c02b670c563640ba280f" lang="en"
+    data-wf-collection="642b977704ea37977f5dcce8" data-wf-item-slug="we-launch-corporatex-template-this-week">
+@elseif (Route::is('about.index'))
+<html data-wf-page="642b977704ea37295a5dcd04" data-wf-site="63f3c02b670c563640ba280f" lang="en">
 @endif
 
 <head>

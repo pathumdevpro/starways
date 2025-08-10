@@ -81,6 +81,11 @@
                             </a>
                         </div>
                         <div class="footer-top-margin">
+                            <a href="{{ route('about.index') }}" class="footer-menu-link w-inline-block">
+                                <div>About Us</div>
+                            </a>
+                        </div>
+                        <div class="footer-top-margin">
                             <a href="{{ route('contact.index') }}" class="footer-menu-link w-inline-block">
                                 <div>Contact Us</div>
                             </a>

@@ -408,18 +408,6 @@
                                 </li>
                                 <li class="has-popup navbar-link">
                                     <a href="#" class="popup-trigger">
-                                        UAE Residence Visa
-                                        <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
-                                    </a>
-                                    <a href="{{ route('contact.index') }}">
-                                        <div class="info-popup">
-                                            <h4>UAE Residence Visa</h4>
-                                            <p>End-to-end support for obtaining a UAE residence visa for you and your dependents.</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="has-popup navbar-link">
-                                    <a href="#" class="popup-trigger">
                                         UAE Driving License
                                         <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
                                     </a>
@@ -442,18 +430,6 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="has-popup navbar-link">
-                                    <a href="#" class="popup-trigger">
-                                        Entry Permit
-                                        <i class="fas fa-chevron-down popup-icon" style="margin-left: 4px; font-size: 0.75em;"></i>
-                                    </a>
-                                    <a href="{{ route('contact.index') }}">
-                                        <div class="info-popup">
-                                            <h4>Entry Permit</h4>
-                                            <p>Support with entry permits, including special handling for restricted nationalities.</p>
-                                        </div>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -462,6 +438,12 @@
                 <div class="compact-dropdown">
                     <a href="{{ route('blogs.index') }}" class="nav-link">
                         Blogs
+                        <div class="underline-hover"></div>
+                    </a>
+                </div>
+                <div class="compact-dropdown">
+                    <a href="{{ route('about.index') }}" class="nav-link">
+                        About Us
                         <div class="underline-hover"></div>
                     </a>
                 </div>

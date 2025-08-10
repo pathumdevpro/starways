@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AccountController as AdminAccountController;
 use App\Http\Controllers\Admin\BaseController as AdminBaseController;
 use App\Http\Controllers\AuthenticationController;
@@ -32,6 +33,7 @@ Route::middleware('web')->group(function () {
         Route::get('services/immigration-services', [ServiceController::class, 'immigration_services'])->name('services.immigration-services');
         Route::get('services/uae-golden-visa', [ServiceController::class, 'uae_golden_visa'])->name('services.uae-golden-visa');
         Route::resource('blogs', BlogController::class)->only(['index', 'show'])->names(['index' => 'blogs.index']);
+        Route::resource('about', AboutController::class)->only(['index'])->names(['index' => 'about.index']);
         Route::resource('contact', ContactController::class)->only(['index'])->names(['index' => 'contact.index']);
     });
 

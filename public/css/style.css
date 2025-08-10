@@ -2234,6 +2234,7 @@ textarea.w-select {
 :root {
     --bg: #fdfcf7;
     --font-color: #1f1f20;
+    --font-color2: #1084e3;
     --bg-underline-hover: #007eb2;
     --bg-text-white: #eeede9;
     --bg-2: #e9ebe3;
@@ -2549,7 +2550,7 @@ blockquote {
 }
 
 .content-section.double {
-    padding-bottom: 140px;
+    padding-bottom: 50px;
 }
 
 .content-section.double.testimonials {
@@ -3672,7 +3673,7 @@ blockquote {
 }
 
 .change-this-image._5 {
-    background-image: url("../images/pexels-pavel-danilyuk-7658388.jpg");
+    background-image: url("../images/pexels-pavel-danilyuk-6405783.jpg");
 }
 
 .change-this-image._3 {
@@ -3790,8 +3791,8 @@ blockquote {
 }
 
 .button-filled {
-    border: 1px solid var(--font-color);
-    background-color: var(--font-color);
+    border: 1px solid var(--font-color2);
+    background-color: var(--font-color2);
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -3806,9 +3807,20 @@ blockquote {
     transition: background-color 0.2s, color 0.2s;
 }
 
+.button-non-filled {
+    text-align: center;
+}
+
+.button-non-filled:hover {
+    color: var(--white);
+    background-color: var(--font-color2);
+    border-color: var(--font-color2);
+}
+
 .button-filled:hover {
     color: var(--font-color);
     background-color: #0000;
+    border-color: var(--font-color);
     font-weight: 600;
 }
 
@@ -8967,4 +8979,17 @@ blockquote {
 
 .consultation-cta {
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Switch order on mobile - mission */
+@media (max-width: 767px) {
+    .mission-section {
+        flex-direction: column;
+    }
+    .mission-image {
+        order: 1;
+    }
+    .mission-content {
+        order: 2;
+    }
 }
