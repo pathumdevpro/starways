@@ -8,7 +8,7 @@ $title = 'Business Setup';
 
 <div
   id="Top"
-  style="background-image: url('/images/pexels-fauxels-31827733.jpg')"
+  style="background-image: url({{ Storage::exists('cms/' . $cms[16]->image) ? Storage::url('cms/' . $cms[16]->image) : asset($cms[16]->image) }})"
   class="utility-hero">
   <div style="display: block" class="on-load-bg"></div>
   <a href="#Intro" class="hero-link-block w-inline-block"></a>
@@ -37,29 +37,21 @@ $title = 'Business Setup';
               class="divider-line"></div>
           </div>
           <div class="side-block">
-            <div class="side-title">Overview</div>
+            <div class="side-title"><x-markdown>{{ $cms[0]->content }}</x-markdown></div>
             <div class="contact-details-box">
               <div class="text-gray w-richtext">
-                <p>- Free Consultation & Activity Selection</p>
-                <p>- Company Name Reservation</p>
-                <p>- License & Document Processing</p>
-                <p>- Office Setup & Bank Account</p>
-                <p>- Visa & Ongoing Compliance</p>
+                <x-markdown>{{ $cms[1]->content }}</x-markdown>
               </div>
             </div>
             <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
           </div>
 
           <div class="side-block">
-            <div class="side-title">Why Register With Us?</div>
+            <div class="side-title"><x-markdown>{{ $cms[2]->content }}</x-markdown></div>
             <div class="contact-details-box">
-              <ul class="text-gray w-richtext" style="padding-left: 1em;">
-                <li>Expert consultants with Dubai legal & business setup knowledge</li>
-                <li>Transparent, step-by-step process</li>
-                <li>Personalized business solutions</li>
-                <li>End-to-end, ongoing support</li>
-                <li>No hidden fees—clear communication</li>
-              </ul>
+              <div class="text-gray w-richtext">
+                <x-markdown>{{ $cms[3]->content }}</x-markdown>
+              </div>
             </div>
             <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
           </div>
@@ -67,55 +59,22 @@ $title = 'Business Setup';
       </div>
       <div class="utility-right">
         <div class="post-heading-box">
-          <div class="all-caps-title">service</div>
-          <h1 class="less-top-margin _10-pixels">The Company Registration Process in Dubai</h1>
-          <p>Business setup made simple. Our expert team guides you from consultation to compliance, ensuring you start strong in Dubai.</p>
+          <div class="all-caps-title"><x-markdown>{{ $cms[4]->content }}</x-markdown></div>
+          <h1 class="less-top-margin _10-pixels"><x-markdown>{{ $cms[5]->content }}</x-markdown></h1>
+          <p><x-markdown>{{ $cms[6]->content }}</x-markdown></p>
           <div class="bottom-line-2"></div>
           <div class="bottom-line-2"></div>
         </div>
         <div class="w-richtext">
-          <h3>How Our Company Registration Process Works</h3>
-          <ol>
-            <li><strong>Free Consultation</strong> – Understand your business idea, target market, and jurisdiction. We help you choose the best setup for your goals and budget.</li>
-            <li><strong>Business Activity Selection</strong> – Select the right activity or combination as per licensing authority, determining your license type (commercial, professional, industrial, etc.).</li>
-            <li><strong>Company Name Reservation</strong> – We help you select and reserve a unique, legally compliant company name.</li>
-            <li><strong>License Application</strong> – Preparation and submission of all required documents to the relevant authority.</li>
-            <li><strong>Document Preparation & Signing</strong> – Assistance with legal documentation, MOA, shareholder agreements, and notarization.</li>
-            <li><strong>Office Space & Location Setup</strong> – Guidance on virtual, flexi-desk, or physical office solutions as per your needs.</li>
-            <li><strong>License Issuance</strong> – Receive your trade license, registration documents, and legal paperwork.</li>
-            <li><strong>Bank Account Opening</strong> – Support in preparing documents and liaising with banks for corporate account setup.</li>
-            <li><strong>Visa Processing (If Required)</strong> – Complete handling of investor, partner, and employee visas, including medicals and Emirates ID.</li>
-            <li><strong>Ongoing Support & Compliance</strong> – Continued assistance with renewals, bookkeeping, VAT registration, and more.</li>
-          </ol>
-          <h3>Why Choose Us for Your Business Registration in Dubai?</h3>
-          <ul>
-            <li><strong>Expert Consultants:</strong> Highly qualified team with deep knowledge of Dubai’s commercial laws and regulatory frameworks.</li>
-            <li><strong>Transparent Process:</strong> Full clarity at every stage. Access to all essential documents—no hidden fees.</li>
-            <li><strong>Personalized Solutions:</strong> Tailored guidance for any business type, from consultancy to international branch.</li>
-            <li><strong>End-to-End Support:</strong> We’re with you post-registration for PRO services, office arrangements, compliance, and more.</li>
-          </ul>
-          <h4>Key Documents We Provide Access To:</h4>
-          <ul>
-            <li>Trade License</li>
-            <li>Memorandum of Association (MOA)</li>
-            <li>Share Certificates</li>
-            <li>Certificate of Incorporation</li>
-            <li>Lease Agreements</li>
-            <li>Identification Documents</li>
-            <li>Register of Members</li>
-          </ul>
-          <h3>Benefits of Registering a Business in the UAE:</h3>
-          <ul>
-            <li><strong>100% Foreign Ownership:</strong> Many business activities allow full foreign ownership, especially in Free Zones and with recent reforms in Mainland setups.</li>
-            <li><strong>Tax Advantages:</strong> Enjoy zero personal income tax and competitive corporate tax rates, making the UAE a globally attractive destination.</li>
-            <li><strong>Strategic Global Location:</strong> Situated between Europe, Asia, and Africa, the UAE is a gateway for international trade and investment.</li>
-            <li><strong>World-Class Infrastructure:</strong> From advanced digital platforms to modern office facilities, the UAE supports seamless business operations.</li>
-            <li><strong>Business-Friendly Environment:</strong> Quick setup processes, government support, and access to global markets make the UAE ideal for startups and large corporations alike.</li>
-            <li><strong>Residency Options:</strong> Business owners and investors can obtain UAE residency visas for themselves and their families.</li>
-          </ul>
-          <p>
-            Start your business with confidence—choose Starway LLC FZ for a smooth, reliable, and transparent setup in Dubai.
-          </p>
+          <h3><x-markdown>{{ $cms[7]->content }}</x-markdown></h3>
+          <p><x-markdown>{{ $cms[8]->content }}</x-markdown></p>
+          <h3><x-markdown>{{ $cms[9]->content }}</x-markdown></h3>
+          <p><x-markdown>{{ $cms[10]->content }}</x-markdown></p>
+          <h4><x-markdown>{{ $cms[11]->content }}</x-markdown></h4>
+          <p><x-markdown>{{ $cms[12]->content }}</x-markdown></p>
+          <h3><x-markdown>{{ $cms[13]->content }}</x-markdown></h3>
+          <p><x-markdown>{{ $cms[14]->content }}</x-markdown></p>
+          <x-markdown>{{ $cms[15]->content }}</x-markdown>
         </div>
       </div>
     </div>

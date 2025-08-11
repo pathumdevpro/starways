@@ -8,7 +8,7 @@ $title = 'Corporate Pro Services';
 
 <div
     id="Top"
-    style="background-image: url('/images/rmirates-id.jpg')"
+    style="background-image: url({{ Storage::exists('cms/' . $cms[14]->image) ? Storage::url('cms/' . $cms[14]->image) : asset($cms[14]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>
@@ -37,29 +37,21 @@ $title = 'Corporate Pro Services';
                             class="divider-line"></div>
                     </div>
                     <div class="side-block">
-                        <div class="side-title">Overview</div>
+                        <div class="side-title"><x-markdown>{{ $cms[0]->content }}</x-markdown></div>
                         <div class="contact-details-box">
                             <div class="text-gray w-richtext">
-                                <p>- Corporate PRO Services</p>
-                                <p>- Regulatory Compliance Management</p>
-                                <p>- Government Approvals & Renewals</p>
-                                <p>- Visa & Emirates ID Processing</p>
-                                <p>- NOC & Document Attestation</p>
+                                <x-markdown>{{ $cms[1]->content }}</x-markdown>
                             </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
 
                     <div class="side-block">
-                        <div class="side-title">Why PRO Services?</div>
+                        <div class="side-title"><x-markdown>{{ $cms[2]->content }}</x-markdown></div>
                         <div class="contact-details-box">
-                            <ul class="text-gray w-richtext" style="padding-left: 1em;">
-                                <li>Ensure regulatory compliance and avoid penalties</li>
-                                <li>Save time by outsourcing government paperwork</li>
-                                <li>Expert guidance on UAE procedures and documentation</li>
-                                <li>Minimize errors, delays, and rejections</li>
-                                <li>Peace of mind—focus on business growth</li>
-                            </ul>
+                            <div class="text-gray w-richtext">
+                                <x-markdown>{{ $cms[3]->content }}</x-markdown>
+                            </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
@@ -67,42 +59,20 @@ $title = 'Corporate Pro Services';
             </div>
             <div class="utility-right">
                 <div class="post-heading-box">
-                    <div class="all-caps-title">service</div>
-                    <h1 class="less-top-margin _10-pixels">Corporate PRO Services – Dubai</h1>
-                    <p>Enhance your business operations in Dubai with comprehensive PRO services—streamlining government documentation, approvals, and compliance.</p>
+                    <div class="all-caps-title"><x-markdown>{{ $cms[4]->content }}</x-markdown></div>
+                    <h1 class="less-top-margin _10-pixels"><x-markdown>{{ $cms[5]->content }}</x-markdown></h1>
+                    <x-markdown>{{ $cms[6]->content }}</x-markdown>
                     <div class="bottom-line-2"></div>
                     <div class="bottom-line-2"></div>
                 </div>
                 <div class="w-richtext">
-                    <h3>Why PRO Services Are Essential for Your Business</h3>
-                    <ul>
-                        <li><strong>Regulatory Compliance:</strong> Ensure full adherence to UAE laws, avoiding penalties and legal complications.</li>
-                        <li><strong>Time Efficiency:</strong> Let us handle paperwork and approvals while you focus on growing your business.</li>
-                        <li><strong>Expert Guidance:</strong> Benefit from our in-depth knowledge of government procedures and documentation.</li>
-                        <li><strong>Minimized Errors & Delays:</strong> Accurate document preparation and review for faster approvals and renewals.</li>
-                        <li><strong>Peace of Mind:</strong> Trust Starway LLC for reliable, professional PRO support.</li>
-                    </ul>
-                    <h3>Our PRO Service Offerings</h3>
-                    <ul>
-                        <li>Trade License Renewal</li>
-                        <li>Visa Processing and Cancellation</li>
-                        <li>Emirates ID Application and Renewal</li>
-                        <li>Labor Card Processing</li>
-                        <li>No Objection Certificate (NOC) Issuance</li>
-                        <li>Document Attestation and Notarization</li>
-                        <li>Government Correspondence Management</li>
-                    </ul>
-                    <h3>Required Documents for PRO Services</h3>
-                    <ul>
-                        <li>Copy of valid business license</li>
-                        <li>Trade name registration documents</li>
-                        <li>Shareholder information including passport copies</li>
-                        <li>Memorandum and Articles of Association (MOA/AOA)</li>
-                        <li>Valid lease agreement or proof of business address</li>
-                    </ul>
-                    <p>
-                        We assist you in preparing and verifying all necessary paperwork. Partner with Starway LLC for seamless, transparent, and expert PRO support—backed by trusted Free Zones, government departments, and banking institutions.
-                    </p>
+                    <h3><x-markdown>{{ $cms[7]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[8]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[9]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[10]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[11]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[12]->content }}</x-markdown>
+                    <x-markdown>{{ $cms[13]->content }}</x-markdown>
                 </div>
             </div>
         </div>

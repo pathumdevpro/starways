@@ -43,10 +43,15 @@
         </a>
         <h6 class="sidebar-title mt-20">Content</h6>
         <div class="sidebar-divider"></div>
-        
+        <a class="sidebar-link sidebar-link-with-icon {{ request()->routeIs('admin.cms*') ? 'active' : '' }}" href="{{ route('admin.cms.pages.index') }}">
+            <span class="sidebar-icon {{ request()->routeIs('admin.cms*') ? 'text-white bg-primary' : '' }}">
+                <i class="fa-solid fa-code-fork"></i>
+            </span>
+            CMS
+        </a>
         <h6 class="sidebar-title mt-20">External Links</h6>
         <div class="sidebar-divider"></div>
-        <a href="{{ route('index') }}" class="sidebar-link sidebar-link-with-icon">
+        <a href="{{ route('index') }}" target="_blank" class="sidebar-link sidebar-link-with-icon">
             <span class="sidebar-icon bg-danger text-white">
                 <i class="fa-solid fa-globe"></i>
             </span>

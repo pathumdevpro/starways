@@ -4,6 +4,9 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AccountsController as AdminAccountsController;
 use App\Http\Controllers\Admin\ArticleController as AdminArticleController;
 use App\Http\Controllers\Admin\BaseController as AdminBaseController;
+use App\Http\Controllers\Admin\Cms\BaseController as AdminCmsBaseController;
+use App\Http\Controllers\Admin\Cms\PageController as AdminPageController;
+use App\Http\Controllers\Admin\Cms\PageSectionController as AdminPageSectionController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\BlogController;
@@ -19,9 +22,11 @@ Route::middleware('web')->group(function () {
             Route::match(['GET', 'POST'], '/forgot-password', [AuthenticationController::class, 'forgotPassword'])->name('forgot-password');
             Route::match(['GET', 'POST'], '/reset-password', [AuthenticationController::class, 'resetPassword'])->name('reset-password');
         });
+
         Route::middleware('auth')->group(function () {
             Route::match(['GET', 'POST'], '/logout', [AuthenticationController::class, 'logout'])->name('logout');
         });
+
         Route::resource('/', BaseController::class)->only(['index'])->names(['index' => 'index']);
         Route::get('services/business-setup', [ServiceController::class, 'business_setup'])->name('services.business-setup');
         Route::get('services/company-registration-mainland', [ServiceController::class, 'company_registration_mainland'])->name('services.company-registration-mainland');
@@ -33,7 +38,7 @@ Route::middleware('web')->group(function () {
         Route::get('services/the-will', [ServiceController::class, 'the_will'])->name('services.the-will');
         Route::get('services/immigration-services', [ServiceController::class, 'immigration_services'])->name('services.immigration-services');
         Route::get('services/uae-golden-visa', [ServiceController::class, 'uae_golden_visa'])->name('services.uae-golden-visa');
-        Route::resource('/blogs', BlogController::class)->only([ 'index' ,'show'])->scoped(['blog' => 'slug']);
+        Route::resource('/blogs', BlogController::class)->only(['index', 'show'])->scoped(['blog' => 'slug']);
         Route::resource('about', AboutController::class)->only(['index'])->names(['index' => 'about.index']);
         Route::resource('contact', ContactController::class)->only(['index'])->names(['index' => 'contact.index']);
     });
@@ -43,5 +48,15 @@ Route::middleware('web')->group(function () {
         Route::get('/accounts/profile', [AdminAccountsController::class, 'profile'])->name('accounts.profile');
         Route::put('/accounts/update-password', [AuthenticationController::class, 'updatePassword'])->name('accounts.update-password');
         Route::resource('/articles', AdminArticleController::class)->only(['index', 'store', 'show', 'update', 'destroy']);
+    });
+
+    Route::prefix('/admin/cms')->name('admin.cms.')->group(function () {
+        Route::middleware('auth')->group(function () {
+            Route::resource('/pages', AdminPageController::class)->only(['index']);
+            Route::resource('/pages.sections', AdminPageSectionController::class)->only(['index']);
+            Route::resource('/pages.sections', AdminPageSectionController::class)->only(['show']);
+            Route::put('/update-content', [AdminCmsBaseController::class, 'updateContent'])->name('update-content');
+            Route::put('/update-image', [AdminCmsBaseController::class, 'updateImage'])->name('update-image');
+        });
     });
 });

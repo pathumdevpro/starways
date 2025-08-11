@@ -8,7 +8,7 @@ $title = 'UAE Golden Visa';
 
 <div
     id="Top"
-    style="background-image: url('/images/golden-visa.jpg')"
+    style="background-image: url({{ Storage::exists('cms/' . $cms[15]->image) ? Storage::url('cms/' . $cms[15]->image) : asset($cms[15]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>
@@ -37,30 +37,21 @@ $title = 'UAE Golden Visa';
                             class="divider-line"></div>
                     </div>
                     <div class="side-block">
-                        <div class="side-title">Overview</div>
+                        <div class="side-title"><x-markdown>{{ $cms[0]->content }}</x-markdown></div>
                         <div class="contact-details-box">
                             <div class="text-gray w-richtext">
-                                <p>- Golden Visa Eligibility Assessment</p>
-                                <p>- Application Preparation & Submission</p>
-                                <p>- Emirates ID & Medical Test Support</p>
-                                <p>- Relocation & Activation Services</p>
+                                <x-markdown>{{ $cms[1]->content }}</x-markdown>
                             </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
 
                     <div class="side-block">
-                        <div class="side-title">Why Golden Visa?</div>
+                        <div class="side-title"><x-markdown>{{ $cms[2]->content }}</x-markdown></div>
                         <div class="contact-details-box">
-                            <ul class="text-gray w-richtext" style="padding-left: 1em;">
-                                <li>5 or 10-year UAE residency—no local sponsor required</li>
-                                <li>100% business ownership</li>
-                                <li>Sponsor family & unlimited domestic staff</li>
-                                <li>No minimum stay requirement</li>
-                                <li>Multiple entry visas for easy relocation</li>
-                                <li>Access to banking, education, healthcare</li>
-                                <li>Path to long-term stability in the UAE</li>
-                            </ul>
+                            <div class="text-gray w-richtext">
+                                <x-markdown>{{ $cms[3]->content }}</x-markdown>
+                            </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
@@ -68,45 +59,21 @@ $title = 'UAE Golden Visa';
             </div>
             <div class="utility-right">
                 <div class="post-heading-box">
-                    <div class="all-caps-title">service</div>
-                    <h1 class="less-top-margin _10-pixels">UAE Golden Visa</h1>
-                    <p>Secure Long-Term Residency in the UAE—flexible, secure, and designed for outstanding professionals and investors.</p>
+                    <div class="all-caps-title"><x-markdown>{{ $cms[4]->content }}</x-markdown></div>
+                    <h1 class="less-top-margin _10-pixels"><x-markdown>{{ $cms[5]->content }}</x-markdown></h1>
+                    <x-markdown>{{ $cms[6]->content }}</x-markdown>
                     <div class="bottom-line-2"></div>
                     <div class="bottom-line-2"></div>
                 </div>
                 <div class="w-richtext">
-                    <h3>Overview</h3>
-                    <p>
-                        The UAE Golden Visa is a long-term residency visa for investors, entrepreneurs, skilled professionals, scientists, outstanding students, and exceptional talents. It grants 5 or 10 years of renewable residency, providing security, flexibility, and opportunity in one of the world’s most dynamic economies.
-                    </p>
-                    <h3>Benefits</h3>
-                    <ul>
-                        <li>5 or 10-Year Residency—no local sponsor required</li>
-                        <li>100% business ownership in the UAE</li>
-                        <li>Sponsor family members (spouse & children)</li>
-                        <li>Sponsor unlimited domestic staff</li>
-                        <li>No minimum stay requirement in the UAE</li>
-                        <li>Multiple entry visas to simplify relocation</li>
-                        <li>Full access to banking, education, healthcare, and other local services</li>
-                        <li>Long-term business and personal stability</li>
-                    </ul>
-                    <h3>Process</h3>
-                    <ol>
-                        <li><strong>Initial Consultation & Eligibility Check</strong> – We assess your profile for eligibility based on investment, profession, or achievements.</li>
-                        <li><strong>Document Collection & Review</strong> – Assistance in compiling and reviewing all required documents (passport, qualifications, bank statements, etc.).</li>
-                        <li><strong>Application Submission</strong> – We submit your application to the UAE authorities.</li>
-                        <li><strong>Medical Test & Emirates ID</strong> – After approval, complete your medical exam and biometric registration.</li>
-                        <li><strong>Golden Visa Issuance</strong> – Receive your 5 or 10-year Golden Visa depending on your eligibility category.</li>
-                        <li><strong>Post-Issuance Support</strong> – Full support with Emirates ID activation, local bank account setup, and relocation services.</li>
-                    </ol>
-                    <h3>Eligible Categories</h3>
-                    <ul>
-                        <li>Real estate investors</li>
-                        <li>Entrepreneurs and business owners</li>
-                        <li>Professionals in medicine, science, and engineering</li>
-                        <li>Creative professionals in art and culture</li>
-                        <li>Outstanding students and researchers</li>
-                    </ul>
+                    <h3><x-markdown>{{ $cms[7]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[8]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[9]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[10]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[11]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[12]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[13]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[14]->content }}</x-markdown>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ $title = 'Office Flexi Desk Arrangement';
 
 <div
     id="Top"
-    style="background-image: url('/images/Office_Flexi_Desk_Arrangement.jpg')"
+    style="background-image: url({{ Storage::exists('cms/' . $cms[16]->image) ? Storage::url('cms/' . $cms[16]->image) : asset($cms[16]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>
@@ -37,28 +37,21 @@ $title = 'Office Flexi Desk Arrangement';
                             class="divider-line"></div>
                     </div>
                     <div class="side-block">
-                        <div class="side-title">Overview</div>
+                        <div class="side-title"><x-markdown>{{ $cms[0]->content }}</x-markdown></div>
                         <div class="contact-details-box">
                             <div class="text-gray w-richtext">
-                                <p>- Flexi Desk & Virtual Office Setup</p>
-                                <p>- Location & Office Selection</p>
-                                <p>- Utility Activation</p>
-                                <p>- Registration & Compliance</p>
+                                <x-markdown>{{ $cms[1]->content }}</x-markdown>
                             </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
 
                     <div class="side-block">
-                        <div class="side-title">Why Flexi Desk?</div>
+                        <div class="side-title"><x-markdown>{{ $cms[2]->content }}</x-markdown></div>
                         <div class="contact-details-box">
-                            <ul class="text-gray w-richtext" style="padding-left: 1em;">
-                                <li>Cost-effective workspace solution</li>
-                                <li>Official address for registration</li>
-                                <li>Flexible options: shared, private, virtual</li>
-                                <li>Full compliance with UAE regulations</li>
-                                <li>Quick setup & activation</li>
-                            </ul>
+                            <div class="text-gray w-richtext">
+                                <x-markdown>{{ $cms[3]->content }}</x-markdown>
+                            </div>
                         </div>
                         <div class="divider-line" style="transform: translate3d(-101%, 0, 0) scale3d(1, 1, 1);"></div>
                     </div>
@@ -66,44 +59,22 @@ $title = 'Office Flexi Desk Arrangement';
             </div>
             <div class="utility-right">
                 <div class="post-heading-box">
-                    <div class="all-caps-title">service</div>
-                    <h1 class="less-top-margin _10-pixels">Flexi Desk & Virtual Office Setup – Dubai</h1>
-                    <p>Official Address or Flexible Desk—Your Choice. Seamless workspace solutions for startups and established businesses.</p>
+                    <div class="all-caps-title"><x-markdown>{{ $cms[4]->content }}</x-markdown></div>
+                    <h1 class="less-top-margin _10-pixels"><x-markdown>{{ $cms[5]->content }}</x-markdown></h1>
+                    <x-markdown>{{ $cms[6]->content }}</x-markdown>
                     <div class="bottom-line-2"></div>
                     <div class="bottom-line-2"></div>
                 </div>
                 <div class="w-richtext">
-                    <h3>Overview</h3>
-                    <p>
-                        Whether you're a startup or an established business seeking cost-effective space, our Flexi Desk solutions offer a smart and compliant way to establish your presence in Dubai. We provide a seamless setup for virtual offices or physical workspaces with all the essentials.
-                    </p>
-                    <h3>What We Offer</h3>
-                    <ul>
-                        <li>Assistance in choosing the ideal location and office type (Flexi Desk, Executive Desk, or Private Office)</li>
-                        <li>Full compliance with Free Zone or Mainland regulations</li>
-                        <li>DEWA, internet, and basic utilities (where applicable)</li>
-                        <li>Official address for business registration and communication</li>
-                    </ul>
-                    <h3>Setup Process</h3>
-                    <ol>
-                        <li>Choose Your Location – We help you select a zone that matches your business needs.</li>
-                        <li>Select Office Type – Pick between shared desk, private space, or virtual options.</li>
-                        <li>Document Preparation – We assist with all forms and approvals.</li>
-                        <li>Sign Agreement – Finalize lease and service agreements.</li>
-                        <li>Get Approval – We handle submissions and follow-ups with relevant authorities.</li>
-                        <li>Office Activation – Begin using your office or flexi desk for licensing, operations, and correspondence.</li>
-                    </ol>
-                    <h3>Required Documents</h3>
-                    <ul>
-                        <li>Passport copy of shareholders</li>
-                        <li>Visa copy (if applicable)</li>
-                        <li>Emirates ID (if available)</li>
-                        <li>Business license copy (for renewals)</li>
-                        <li>Company documents (for existing entities)</li>
-                    </ul>
-                    <p>
-                        Let us simplify your business journey with the right workspace—efficient, affordable, and fully compliant.
-                    </p>
+                    <h3><x-markdown>{{ $cms[7]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[8]->content }}</x-markdown>
+                    <h3 class="mt-25"><x-markdown>{{ $cms[9]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[10]->content }}</x-markdown>
+                    <h3 class="mt-25"><x-markdown>{{ $cms[11]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[12]->content }}</x-markdown>
+                    <h3><x-markdown>{{ $cms[13]->content }}</x-markdown></h3>
+                    <x-markdown>{{ $cms[14]->content }}</x-markdown>
+                    <x-markdown>{{ $cms[15]->content }}</x-markdown>
                 </div>
             </div>
         </div>
