@@ -8,7 +8,9 @@ $title = 'Company Registration Mainland';
 
 <div
     id="Top"
-    style="background-image: url({{ Storage::exists('cms/' . $cms[17]->image) ? Storage::url('cms/' . $cms[17]->image) : asset($cms[17]->image) }})"
+    style="background-image: url({{ $cms[17]->content && Storage::exists('cms/' . $cms[17]->content) 
+    ? Storage::url('cms/' . $cms[17]->content) 
+    : asset($cms[17]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>

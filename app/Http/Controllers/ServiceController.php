@@ -69,6 +69,8 @@ class ServiceController extends Controller
 
     public function uae_golden_visa()
     {
+        // $cms = Cms::where('page', 'services.uae-golden-visa')->orderBy('id', 'asc')->get();
+        // dd($cms);
         return view('app.services.uae-golden-visa', [
             'cms' => Cms::where('page', 'services.uae-golden-visa')->orderBy('id', 'asc')->get(),
         ]);

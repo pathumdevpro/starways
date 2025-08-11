@@ -8,7 +8,9 @@ $title = 'The Will';
 
 <div
     id="Top"
-    style="background-image: url({{ Storage::exists('cms/' . $cms[14]->image) ? Storage::url('cms/' . $cms[14]->image) : asset($cms[14]->image) }})"
+    style="background-image: url({{ $cms[14]->content && Storage::exists('cms/' . $cms[14]->content) 
+    ? Storage::url('cms/' . $cms[14]->content) 
+    : asset($cms[14]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>

@@ -8,7 +8,9 @@ $title = 'Corporate Tax Registration';
 
 <div
     id="Top"
-    style="background-image: url({{ Storage::exists('cms/' . $cms[15]->image) ? Storage::url('cms/' . $cms[15]->image) : asset($cms[15]->image) }})"
+    style="background-image: url({{ $cms[15]->content && Storage::exists('cms/' . $cms[15]->content) 
+    ? Storage::url('cms/' . $cms[15]->content) 
+    : asset($cms[15]->image) }})"
     class="utility-hero">
     <div style="display: block" class="on-load-bg"></div>
     <a href="#Intro" class="hero-link-block w-inline-block"></a>
