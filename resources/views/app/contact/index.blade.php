@@ -189,8 +189,33 @@ $title = 'Home';
                         <div class="divider-line"></div>
                     </div>
                     <div class="contact-form w-form">
+
+                        @if(session('success'))
+                        <div style="padding:15px; background:#d4edda; color:#155724; border-radius:5px; margin-bottom:15px;">
+                            {{ session('success') }}
+                        </div>
+                        @endif
+
+                        @if(session('error'))
+                        <div style="padding:15px; background:#f8d7da; color:#721c24; border-radius:5px; margin-bottom:15px;">
+                            {{ session('error') }}
+                        </div>
+                        @endif
+
+                        @if ($errors->any())
+                        <div style="padding:15px; background:#fff3cd; color:#856404; border-radius:5px; margin-bottom:15px;">
+                            <strong>Please fix the following:</strong>
+                            <ul style="margin:5px 0 0 20px;">
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
                         <form
-                            method="get"
+                            action="{{ route('contact.mail') }}"
+                            method="post"
                             name="wf-form-Contact-Form"
                             data-name="Contact Form"
                             style="opacity: 0"
@@ -199,11 +224,13 @@ $title = 'Home';
                             class="contact-form-flex"
                             data-wf-page-id="642b977704ea370b045dcd31"
                             data-wf-element-id="6b239ec0-ec7b-ce86-b0ee-26fa7abfa97e">
+                            @method('post')
+                            @csrf
                             <div class="flex-space-full no-top-margin">
                                 <input
                                     class="field w-input"
                                     maxlength="256"
-                                    name="Name"
+                                    name="name"
                                     data-name="Name"
                                     placeholder="Your name"
                                     type="text"
@@ -223,39 +250,30 @@ $title = 'Home';
                                 <input
                                     class="field w-input"
                                     maxlength="256"
-                                    name="Email"
+                                    name="email"
                                     data-name="Email"
                                     placeholder="Email"
                                     type="email"
                                     id="field"
-                                    required="" /><input
+                                    required="" />
+                                <input
                                     class="field w-input"
                                     maxlength="256"
-                                    name="Mobile"
+                                    name="phone"
                                     data-name="Mobile"
                                     placeholder="Mobile"
                                     type="tel"
                                     id="field"
                                     required="" />
                             </div>
-                            <!-- <select
-                                name="Budget"
-                                data-name="Budget"
-                                id="field"
-                                class="select-field w-select">
-                                <option value="">Budget</option>
-                                <option value="$900 -$1,900">$900 -$1,900</option>
-                                <option value="$2,000 - $4,900">$2,000 - $4,900</option>
-                                <option value="$4,900 - $9,900">
-                                    $4,900 - $9,900
-                                </option> -->
-                            </select><textarea
-                                name="Message"
+                            <textarea
+                                name="message"
                                 maxlength="5000"
                                 data-name="Message"
                                 placeholder="Your message..."
                                 id="field"
-                                class="textarea w-input"></textarea><input
+                                class="textarea w-input"></textarea>
+                            <input
                                 type="submit"
                                 data-wait="Please wait..."
                                 class="submit w-button"
@@ -283,5 +301,18 @@ $title = 'Home';
     </div>
 
 </div>
+
+@if(session('success') || session('error'))
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const introSection = document.getElementById("Intro");
+        if (introSection) {
+            introSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+</script>
+@endif
 
 @endsection

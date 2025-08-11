@@ -41,6 +41,7 @@ Route::middleware('web')->group(function () {
         Route::resource('/blogs', BlogController::class)->only(['index', 'show'])->scoped(['blog' => 'slug']);
         Route::resource('about', AboutController::class)->only(['index'])->names(['index' => 'about.index']);
         Route::resource('contact', ContactController::class)->only(['index'])->names(['index' => 'contact.index']);
+        Route::post('/contact/mail', [ContactController::class, 'mail'])->name('contact.mail');
     });
 
     Route::prefix('/admin')->name('admin.')->middleware('auth')->group(function () {
