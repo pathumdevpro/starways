@@ -2451,6 +2451,7 @@ blockquote {
     font-size: 19px;
     font-weight: 500;
     line-height: 27px;
+    word-spacing: 5px;
 }
 
 .hero-subtitle.center,
@@ -3174,6 +3175,11 @@ blockquote {
     position: relative;
 }
 
+.submit.submit-contact {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .divider-line {
     background-color: var(--lines);
     width: 100%;
@@ -3490,7 +3496,7 @@ blockquote {
     font-family: Satoshi Variable, sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 32px;
 }
 
 .subtitle.white {
@@ -8394,7 +8400,7 @@ blockquote {
 .nav-link {
     color: #333;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 10px 5px;
     position: relative;
     transition: color 0.2s;
 }
@@ -8829,6 +8835,10 @@ blockquote {
     margin-top: 25px;
 }
 
+.mt-6 {
+    margin-top: 6px;
+}
+
 /* whatsapp cto */
 
 /* WhatsApp Float Button */
@@ -8996,4 +9006,8 @@ blockquote {
     .mission-content {
         order: 2;
     }
+}
+
+.phone-numbers {
+    font-size: large;
 }

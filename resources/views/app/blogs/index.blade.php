@@ -23,7 +23,7 @@ $title = 'Blogs';
                         </a></div>
                     <div class="max-600-pixels">
                         <p class="hero-subtitle center">
-                            Read latest news and updates from our Star Ways team and our clients around the world.
+                            Read latest news and updates from our Star Way LLC team and our clients around the world.
                         </p>
                     </div>
                     <div class="hidden">

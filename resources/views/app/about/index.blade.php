@@ -194,7 +194,7 @@ $title = 'About Us';
                     <div class="max-600-pixels">
                         <h2 class="h2" style="margin-bottom: 20px;">Why Star Way?</h2>
 
-                        <ul style="list-style: none; padding: 0; margin: 0;">
+                        <ul style="list-style: none; padding: 0; margin: 0; line-height: 26px;">
                             <li style="margin-bottom: 20px;">
                                 <strong>Expertise You Can Rely On</strong> – With years of experience in corporate services, our team brings deep knowledge of the legal, financial, and operational landscapes in the UAE. We are committed to guiding you through every step of your business journey.
                             </li>
@@ -276,33 +276,6 @@ $title = 'About Us';
     @include('components.includes.our-team')
 </div>
 <div class="content-bg">
-    <div class="video-relative">
-        <div
-            data-poster-url="images/upload-poster-00001.jpg"
-            data-video-urls="images/upload-transcode.mp4,images/upload-transcode.webm"
-            data-autoplay="true"
-            data-loop="true"
-            data-wf-ignore="true"
-            class="background-video w-background-video w-background-video-atom">
-            <video
-                id="f1a9462a-6e0f-c3f1-8722-e88d4c7be5c7-video"
-                autoplay=""
-                loop=""
-                style="background-image: url('images/upload-poster-00001.jpg')"
-                muted=""
-                playsinline=""
-                data-wf-ignore="true"
-                data-object-fit="cover">
-                <source src="images/upload-transcode.mp4" data-wf-ignore="true" />
-                <source
-                    src="images/upload-transcode.webm"
-                    data-wf-ignore="true" />
-            </video>
-            <div id="Features" class="video-gradient"></div>
-        </div>
-
-    </div>
-
     @include('components.includes.our-partners')
 </div>
 

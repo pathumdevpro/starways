@@ -271,12 +271,13 @@ $title = 'Home';
                                 maxlength="5000"
                                 data-name="Message"
                                 placeholder="Your message..."
+                                required=""
                                 id="field"
                                 class="textarea w-input"></textarea>
                             <input
                                 type="submit"
                                 data-wait="Please wait..."
-                                class="submit w-button"
+                                class="submit w-button submit-contact"
                                 value="Submit" />
                         </form>
                         <div class="success-message w-form-done">

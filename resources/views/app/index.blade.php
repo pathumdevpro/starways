@@ -306,7 +306,7 @@ $title = 'Home';
           <img src="{{ asset('images/intro-icon.png') }}" loading="lazy" width="42" alt="" class="center-icon" />
           <h5 class="h5">About Us</h5>
           <p class="paragraph-medium">
-            At StarWay, we handle registration, making your business vision a legal reality.
+            At Star Way LLC, we handle registration, making your business vision a legal reality.
           </p>
           <div style="
                     -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
@@ -668,7 +668,7 @@ $title = 'Home';
                 <div class="side-button">
                   <a href="#Services" class="button button-non-filled w-button">learn more</a>
                 </div>
-                <a href="/contact-us" class="button-filled w-button">Get a free Consultation</a>
+                <a href="{{ route('contact.index') }}" class="button-filled w-button">Get a free Consultation</a>
               </div>
             </div>
           </div>
@@ -950,7 +950,7 @@ $title = 'Home';
         </div>
         <div class="feature-item green">
           <div>
-            <div class="text-block">Reach out to <br />Starway LLC</div>
+            <div class="text-block">Reach out to <br />Star Way LLC</div>
             <div class="paragraph-box">
               <p class="paragraph-medium">
                 Select our best exclusive service for your business today!

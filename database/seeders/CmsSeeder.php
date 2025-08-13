@@ -145,7 +145,7 @@ class CmsSeeder extends Seeder
                 'page' => 'services.business-setup',
                 'section' => 'main content',
                 'position' => 'bottom text',
-                'content' => "Start your business with confidence—choose Starway LLC FZ for a smooth, reliable, and transparent setup in Dubai.",
+                'content' => "Start your business with confidence—choose Star Way LLC FZ for a smooth, reliable, and transparent setup in Dubai.",
             ],
             [
                 'page' => 'services.business-setup',
@@ -184,7 +184,7 @@ class CmsSeeder extends Seeder
                 'page' => 'services.company-registration-mainland',
                 'section' => 'aside content',
                 'position' => 'second title',
-                'content' => 'Why Choose Starway?',
+                'content' => 'Why Choose Star Way?',
             ],
             [
                 'page' => 'services.company-registration-mainland',
@@ -224,7 +224,7 @@ class CmsSeeder extends Seeder
                 'page' => 'services.company-registration-mainland',
                 'section' => 'main content',
                 'position' => 'second paragraph',
-                'content' => "Starting a business in Dubai Mainland allows you to trade anywhere in the UAE and internationally without restrictions. At StarWay, we make the process simple and efficient, handling everything from legal structure to license issuance, local sponsor arrangements (if needed), and visa quotas.
+                'content' => "Starting a business in Dubai Mainland allows you to trade anywhere in the UAE and internationally without restrictions. At Star Way LLC, we make the process simple and efficient, handling everything from legal structure to license issuance, local sponsor arrangements (if needed), and visa quotas.
 
 With access to government projects, retail space, and full operational freedom, Mainland registration is ideal for businesses looking to grow fast and stay flexible. We handle everything: trade license, local approvals, tenant registration (Ejari), MoA drafting, and visa quotas-so your business starts fully compliant and operational.                ",
             ],
@@ -250,7 +250,7 @@ With access to government projects, retail space, and full operational freedom, 
                 'page' => 'services.company-registration-mainland',
                 'section' => 'main content',
                 'position' => 'fourth paragraph',
-                'content' => "Dubai Mainland offers different types of licenses to suit a wide range of business activities. Choosing the right one is essential for compliance and long-term success. At StarWay, we help you identify and apply for the license that matches your goals.
+                'content' => "Dubai Mainland offers different types of licenses to suit a wide range of business activities. Choosing the right one is essential for compliance and long-term success. At Star Way LLC, we help you identify and apply for the license that matches your goals.
 
 - **Commercial License** : Perfect for businesses involved in trading, retail, and general commerce-enables importing, exporting, and selling goods.
 - **Industrial License** : Tailored for manufacturing and production companies—grants permission to set up factories and industrial facilities.
@@ -631,7 +631,7 @@ With access to government projects, retail space, and full operational freedom, 
 - **Time Efficiency**: Let us handle paperwork and approvals while you focus on growing your business.
 - **Expert Guidance**: Benefit from our in-depth knowledge of government procedures and documentation.
 - **Minimized Errors & Delays**: Accurate document preparation and review for faster approvals and renewals.
-- **Peace of Mind**: Trust Starway LLC for reliable, professional PRO support.',
+- **Peace of Mind**: Trust Star Way LLC for reliable, professional PRO support.',
             ],
             [
                 'page' => 'services.corporate-pro-services',
@@ -671,7 +671,7 @@ With access to government projects, retail space, and full operational freedom, 
                 'page' => 'services.corporate-pro-services',
                 'section' => 'main content',
                 'position' => 'bottom text',
-                'content' => 'We assist you in preparing and verifying all necessary paperwork. Partner with Starway LLC for seamless, transparent, and expert PRO support—backed by trusted Free Zones, government departments, and banking institutions.',
+                'content' => 'We assist you in preparing and verifying all necessary paperwork. Partner with Star Way LLC for seamless, transparent, and expert PRO support—backed by trusted Free Zones, government departments, and banking institutions.',
             ],
             [
                 'page' => 'services.corporate-pro-services',
@@ -869,7 +869,7 @@ With access to government projects, retail space, and full operational freedom, 
                 'page' => 'services.tax-and-vat',
                 'section' => 'main content',
                 'position' => 'second paragraph',
-                'content' => 'In today’s regulated UAE business environment, VAT and tax compliance is critical. Our expert team at StarWay provides end-to-end VAT & tax services to ensure your business meets legal requirements, avoids penalties, and optimizes financial performance.',
+                'content' => 'In today’s regulated UAE business environment, VAT and tax compliance is critical. Our expert team at Star Way LLC provides end-to-end VAT & tax services to ensure your business meets legal requirements, avoids penalties, and optimizes financial performance.',
             ],
             [
                 'page' => 'services.tax-and-vat',

@@ -151,7 +151,7 @@
             <div class="team-text-box">
                 <div class="job-title">Operations Manager</div>
                 <div>
-                    <div class="team-name">Khateja Ruskar<br></div>
+                    <div class="team-name">Khuteja Ruksar<br></div>
                 </div>
             </div>
         </div>
@@ -198,7 +198,7 @@
             <div class="team-text-box">
                 <div class="job-title">Business Development Manager</div>
                 <div>
-                    <div class="team-name">Chaima Dabussi<br></div>
+                    <div class="team-name">Chaima Daboussi<br></div>
                 </div>
             </div>
         </div>

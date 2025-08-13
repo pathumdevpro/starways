@@ -66,7 +66,7 @@
                             </a>
                         </div>
                         <div class="footer-top-margin">
-                            <a href="/property-consulting" class="footer-menu-link w-inline-block">
+                            <a href="{{ route('services.the-will') }}" class="footer-menu-link w-inline-block">
                                 <div>Property Consulting</div>
                             </a>
                         </div>
@@ -107,10 +107,10 @@
                         <div class="footer-top-margin _20-pixels">
                             <div class="footer-title">Get in touch</div>
                             <div class="footer-top-margin">
-                                <a href="tel:{{ env('APP_PHONE_01') }}" class="dark-link">{{ env('APP_PHONE_01_DISPLAY') }}</a>
+                                <a href="tel:{{ env('APP_PHONE_01') }}" class="dark-link phone-numbers">{{ env('APP_PHONE_01_DISPLAY') }}</a>
                                 <br/>
-                                <a href="tel:{{ env('APP_PHONE_02') }}" class="dark-link">{{ env('APP_PHONE_02_DISPLAY') }}</a>
-                                <div>
+                                <a href="tel:{{ env('APP_PHONE_02') }}" class="dark-link phone-numbers">{{ env('APP_PHONE_02_DISPLAY') }}</a>
+                                <div class="mt-6">
                                     <a href="mailto:{{ env('APP_EMAIL_ADDRESS') }}" class="dark-link">{{ env('APP_EMAIL_ADDRESS') }}</a>
                                 </div>
                             </div>
